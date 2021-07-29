@@ -84,3 +84,35 @@ Below are some basic wireframes designed for mobile, tablet and desktop created 
 
 **Page to show the user's profile**
 ![Classic Ford profile page](wireframes/profile.png)
+
+---
+
+# DATABASE AND MODEL 
+
+Database and model info goes here
+
+---
+
+# DESIGN
+
+## Website Typography
+For the Classic Ford Cars logo, I chose Parisienne obtained from Google Fonts. I liked it because it's similiar to the original Ford logo.
+
+### About Parisienne
+Parisienne is a casual connecting script inspired by a 1960s Bra advertisement! It has a slight bounce and intentional irregularity to what might other wise appear to be a more formal script font. Classic, yet free spirited, it is a typestyle for a wide variety of use.
+
+![Logo text](wireframes/logo_text.png)
+
+For all body and heading text, I'll be using Noto Sans. I decided to use this font because it's a nice clean design and looks well on both Mac and PC displays.
+
+### About Noto Sans
+This is the Sans-Serif Latin, Greek and Cyrillic and Devanagari family. It has Regular, Bold, Italic and Bold Italic styles and is hinted. It has a Serif sister family, Noto Serif.
+
+Noto fonts for many other languages are available as web fonts in Google Fonts Early Access.
+
+![Body and heading text](wireframes/body_heading_text.png)
+
+
+---
+
+
