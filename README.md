@@ -113,6 +113,87 @@ Noto fonts for many other languages are available as web fonts in Google Fonts E
 ![Body and heading text](wireframes/body_heading_text.png)
 
 
+## Colour Scheme
+
+Below is a colour palette generated from [coolors](https://coolors.co/), which will be used throughout the website. 
+
+- Body background colour will be the off-white #F7FFF7
+
+- Footer and main body text will be the charcoal black #343434
+
+The remainding colours will be used for buttons and navigational links.
+
+![Colour theme](wireframes/colour_theme.png)
+
+
+## Website Imagery
+
+All images of the Ford cars have been sourced from [Dreamstime](https://www.dreamstime.com).
+
+One large hero image will cover half of the homepage. The main navbar will have a transparency background as to not take away from the main inmagery.
+
+In order to make it look like a genuine car dealers, I think it would look good if below the hero image, I had images of "employees". This feature came as an after thought prior to doing my wireframes.  
+
 ---
 
+# WEBSITE FEATURES
 
+Website feature goes here
+
+---
+
+# TESTING
+
+Testing info goes here
+
+---
+
+# TECHNOLOGIES USED
+
+## Languages
+
+- [CSS 3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+- [HTML 5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python 3.8](https://www.python.org/)
+
+## Frameworks
+
+- [Django 3.1](https://www.djangoproject.com/)
+
+- [jQuery 3.6](https://jquery.com/)
+- [Bootsrap 5.0](https://getbootstrap.com/)
+
+## Project management
+
+- [Balsamiq](https://balsamiq.com/wireframes/)
+
+- [GitHub](https://github.com/)
+- [GitPod](https://gitpod.io/)
+- [Heroku](https://www.heroku.com/about)
+- [Stripe](https://stripe.com/en-ie)
+
+## Tools
+
+- [Techsini](http://techsini.com/multi-mockup/index.php)
+
+- [Coolers.co](https://coolors.co/)
+- [Favicon.io](https://favicon.io//)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- Preview on Mac to resize images
+
+---
+
+# CREDITS
+
+Credit info goes here
+
+---
+
+# ACKNOWLEDGEMENTS
+
+Acknowledgement info goes here
+
+---
