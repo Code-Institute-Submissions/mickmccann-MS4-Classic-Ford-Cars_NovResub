@@ -142,9 +142,15 @@ Website feature goes here
 
 ---
 
+# DEPLOYMENT
+
+Deployment info goes here
+
+---
+
 # TESTING
 
-Testing info goes here
+Full details on the relevant testing can be found here: [Testing](TESTING.md)
 
 ---
 
@@ -186,7 +192,7 @@ Testing info goes here
 
 ---
 
-# CREDITS
+# CREDITS
 
 Credit info goes here
 
