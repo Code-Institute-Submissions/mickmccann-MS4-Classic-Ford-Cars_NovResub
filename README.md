@@ -1,8 +1,8 @@
+# CLASSIC FORD CARS
+
 Mock up image goes here
 With live link
 
-
-# CLASSIC FORD CARS
 
 ## About the Project
 
