@@ -138,7 +138,7 @@ In order to make it look like a genuine car dealers, I think it would look good 
 
 # WEBSITE FEATURES
 
-Website feature goes here
+- To ensure website nav items are always within reach, a fixed-top class was added to prevent users from going on a scrolling mission to get to the navbar.
 
 ---
 
