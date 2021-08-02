@@ -140,6 +140,21 @@ In order to make it look like a genuine car dealers, I think it would look good 
 
 - To ensure website nav items are always within reach, a fixed-top class was added to prevent users from going on a scrolling mission to get to the navbar.
 
+## Featured Installed Apps
+
+- django.contrib.admin
+
+- django.contrib.auth
+- django.contrib.contenttypes
+- django.contrib.sessions
+- django.contrib.messages
+- django.contrib.staticfiles
+- django.contrib.sites
+- allauth
+- allauth.account
+- allauth.socialaccount
+- home
+
 ---
 
 # DEPLOYMENT

@@ -22,6 +22,7 @@ Ensure login system redirects back to the login redirect url in settings | Login
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+Ensure Bootstrap is connected and returning the correct url | Bootstrap is connected and returning the correct url. Image confirming the outcome of this test. [Bootstrap test](wireframes/bootstrap_test.png) | PASS
 
 
 ## Back End Testing
