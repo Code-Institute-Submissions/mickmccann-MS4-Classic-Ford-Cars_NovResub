@@ -140,6 +140,12 @@ In order to make it look like a genuine car dealers, I think it would look good 
 
 - To ensure website nav items are always within reach, a fixed-top class was added to prevent users from going on a scrolling mission to get to the navbar.
 
+- A search bar to search through the various cars.
+- The ability to sign up and create an account.
+- Superuser has the ability to maintain the website, by updating or deleting cars.
+- The ability to add cars to the 'bag' and see the cost dynamically update.
+- If something is in the 'bag', font will be bold and a diffrent colour to give the user visual feedback.
+
 ## Featured Installed Apps
 
 - django.contrib.admin
