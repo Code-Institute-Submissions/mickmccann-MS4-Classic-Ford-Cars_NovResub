@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/hero_image.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #F7FFF7;
+    height: calc(100vh - 164px);
+    color: #343434;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+    color: #F7FFF7;
+}
+
+.container {
+    height: 600px;
+}
+
+.discover-text {
+    color: #F7FFF7;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.discover-cars-btn {
+    background: #6ca6c1;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.discover-cars-btn:hover,
+.discover-cars-btn:active,
+.discover-cars-btn:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}

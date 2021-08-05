@@ -112,6 +112,7 @@ Noto fonts for many other languages are available as web fonts in Google Fonts E
 
 ![Body and heading text](wireframes/body_heading_text.png)
 
+**Decided against using Parisienne as it just didn't look too great, looked a bit tacky to be honest. Instead, I'll be using Noto Sans throughout the website.**
 
 ## Colour Scheme
 
