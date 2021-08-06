@@ -37,7 +37,7 @@
     <title>Classic Ford Cars {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid bg-dark bg-gradient fixed-top">
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -111,6 +111,42 @@
 
     {% block postloadjs %}
     {% endblock %}
+
+    <div class="footer-dark fixed-bottom">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Car Delivery</a></li>
+                            <li><a href="#">Buy and Drive</a></li>
+                            <li><a href="#">Mechanical Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Classic Ford Cars</h3>
+                        <p>We are a small bunch of dedicated car mechanics with a passion for Ford cars. Our team have the ability to bring back an old banger of a car and give it a second a life.</p>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">Classic Ford Cars © 2021</p>
+            </div>
+        </footer>
+    </div>    
 
   </body>
 </html>

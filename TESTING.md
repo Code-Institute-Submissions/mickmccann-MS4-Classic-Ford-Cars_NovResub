@@ -25,6 +25,7 @@ TEST            | OUTCOME                          | PASS / FAIL
 Ensure Bootstrap is connected and returning the correct url | Bootstrap is connected and returning the correct url. Image confirming the outcome of this test. [Bootstrap test](wireframes/bootstrap_test.png) | PASS
 Ensure basic search functionality works as intended | When a search query is submitted, the result is returned to the address bar. Image confirming the outcome of this test. [Search test](wireframes/searchtest.png) | PASS
 Ensure when the My Account is clicked a dropdown menu shows Register and Login | When the My Account is clicked a dropdown menu shows Register and Login. Image confirming the outcome of this test. [Menu test](wireframes/menutest.png) | PASS
+Ensure footer social network links work and open up in a new browser tab | Footer social network links work and open up in a new browser tab | PASS
 
 
 ## Back End Testing
@@ -40,6 +41,7 @@ TEST            | OUTCOME                          | PASS / FAIL
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+
 
 # CHROME LIGHTHOUSE REPORT
 
