@@ -49,7 +49,23 @@ TEST            | OUTCOME                          | PASS / FAIL
 
 # RESPONSIVENESS TESTING
 
-## Footer
+## Navbar Responsiveness
+
+Ensure Navbar displays as intended across devices and laptops.
+
+- Navbar displays as intended on laptop and larger screens.
+
+![Navbar larger screens](wireframes/navbar_larger.png)
+
+- Navbar displays as intended on smaller screens.
+
+![Navbar smaller screens](wireframes/navbar_smaller.png)
+
+- Navbar displays as intended on mobile screens.
+
+![Navbar mobile screens](wireframes/navbar_mobile.png)
+
+## Footer Responsiveness
 
 Ensure Footer displays as intended across devices and laptops.
 
