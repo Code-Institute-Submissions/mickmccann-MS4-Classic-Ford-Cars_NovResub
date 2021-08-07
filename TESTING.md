@@ -49,6 +49,22 @@ TEST            | OUTCOME                          | PASS / FAIL
 
 # RESPONSIVENESS TESTING
 
+## Footer
+
+Ensure Footer displays as intended across devices and laptops.
+
+- Footer displays as intended on laptop and larger screens.
+
+![footer larger screens](wireframes/footer_lager.png)
+
+- Footer displays as intended on smaller screens.
+
+![footer smaller screens](wireframes/footer_smaller.png)
+
+- Footer displays as intended on mobile screens.
+
+![footer mobile screens](wireframes/footer_mobile.png)
+
 ---
 
 # BUGS AND ISSUES

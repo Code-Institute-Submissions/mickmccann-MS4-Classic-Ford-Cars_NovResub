@@ -11,10 +11,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.our-mechanics {
-    height: 100px;
-}
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -45,13 +41,12 @@ body {
 
 .discover-cars-btn {
     background: #6ca6c1;
-    color: white;
-    min-width: 260px;
+    color: #f7f7f7;
 }
 
 .btn-black {
     background: black;
-    color: white;
+    color: #F7FFF7;
 }
 
 .discover-cars-btn:hover,
@@ -60,8 +55,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #ffe66d;
+    color: #343434;
 }
 
 .text-black {
@@ -69,7 +64,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #6ca6c1 !important;
 }
 
 
