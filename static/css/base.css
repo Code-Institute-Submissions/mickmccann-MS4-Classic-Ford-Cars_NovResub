@@ -67,6 +67,10 @@ body {
     border: 1px solid #6ca6c1 !important;
 }
 
+.bg-black {
+  background-color: #000 !important;
+}
+
 
 .footer-dark {
     height: 280px;
@@ -99,14 +103,7 @@ body {
   .footer-dark ul a:hover {
     opacity:0.8;
   }
-  
-  @media (max-width:767px) {
-    .footer-dark .item:not(.social) {
-      text-align:center;
-      padding-bottom:20px;
-    }
-  }
-  
+    
   .footer-dark .item.text {
     margin-bottom:36px;
   }
@@ -166,6 +163,13 @@ body {
   }
 
   @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+
+@media (max-width:767px) {
     .footer-dark .item.text {
       margin-bottom:0;
     }
