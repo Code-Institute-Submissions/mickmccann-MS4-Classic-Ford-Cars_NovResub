@@ -146,6 +146,8 @@ In order to make it look like a genuine car dealers, I think it would look good 
 - Superuser has the ability to maintain the website, by updating or deleting cars.
 - The ability to add cars to the 'bag' and see the cost dynamically update.
 - If something is in the 'bag', font will be bold and a diffrent colour to give the user visual feedback.
+- Fixtures is used in order to load data very quickly into a django database so we don't have to do it all manually in the admin.
+
 
 ## Featured Installed Apps
 
@@ -161,6 +163,7 @@ In order to make it look like a genuine car dealers, I think it would look good 
 - allauth.account
 - allauth.socialaccount
 - home
+- cars
 
 ---
 

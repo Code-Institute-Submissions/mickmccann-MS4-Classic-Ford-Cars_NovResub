@@ -1,0 +1,14 @@
+[
+    {
+        "pk": 1, "model": "products.product", "fields":
+        {
+            "sku": "pp5001340155",
+            "name": "Capri MkI 1600 GT",
+            "description": "This Ford Capri MK1 was built in the year 1974. This two-door sports car is a 1600 GT version with a powerful 1600cc four-cylinder engine and manual gearbox. A fantastic car, both to see and to drive! The yellow paintwork of this Capri is in beautiful condition, as well as the characteristic black vinyl roof which gives the car a real classic look. The interior has light brown upholstery. Everything shows that this car comes from a true enthusiast. This Ford Capri is equipped with double round headlights of a Capri RS. The original headlights are present with the car and we can mount them for you if desired. Are you looking for a Ford Capri MK1 to drive beautiful trips? You are very welcome in our showroom to view this classic.",
+            "price": 18500.00,
+            "category": 1,
+            "rating": 4.6,
+            "image": "178618367.jpg"
+        }
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {"pk": 1, "model": "products.category", "fields": {"name": "capri_mkI_1600_gt", "friendly_name": "Capri MkI 1600 GT"}}, 
+    {"pk": 2, "model": "products.category", "fields": {"name": "mustang_mach_1", "friendly_name": "Mustang Mach 1"}},  
+    {"pk": 3, "model": "products.category", "fields": {"name": "capri_2.0_mark_1", "friendly_name": "Capri 2.0 Mark 1"}}, 
+    {"pk": 4, "model": "products.category", "fields": {"name": "capri_rally_cars", "friendly_name": "Capri Rally Cars"}}, 
+    {"pk": 5, "model": "products.category", "fields": {"name": "racing_mustangs", "friendly_name": "Racing Mustangs"}}, 
+    {"pk": 6, "model": "products.category", "fields": {"name": "new_arrivals", "friendly_name": "New Arrivals"}}
+]
