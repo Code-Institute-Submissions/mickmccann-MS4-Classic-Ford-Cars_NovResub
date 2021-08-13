@@ -30,6 +30,7 @@ Ensure Bootstrap is connected and returning the correct url | Bootstrap is conne
 Ensure basic search functionality works as intended | When a search query is submitted, the result is returned to the address bar. Image confirming the outcome of this test. [Search test](wireframes/searchtest.png) | PASS
 Ensure when the My Account is clicked a dropdown menu shows Register and Login | When the My Account is clicked a dropdown menu shows Register and Login. Image confirming the outcome of this test. [Menu test](wireframes/menutest.png) | PASS
 Ensure footer social network links work and open up in a new browser tab | Footer social network links work and open up in a new browser tab | PASS
+Enusure basic CSS styles are working with the Products page | Basic CSS styles are working with the Products page. [CSS test](wireframes/products_css.png) | PASS
  
 
 ---
@@ -78,6 +79,22 @@ Ensure Footer displays as intended across devices and laptops.
 - Footer displays as intended on mobile screens.
 
 ![footer mobile screens](wireframes/footer_mobile.png)
+
+## Car Products Page
+
+Ensure Car Products page displays as intended across devices and laptops.
+
+- Car Products page displays as intended on laptop and larger screens.
+
+![products larger screens](wireframes/carproducts_large.png)
+
+- Car Products page displays as intended on smaller screens.
+
+![products smaller screens](wireframes/carproducts_smaller.png)
+
+- Car Products page displays as intended on mobile screens.
+
+![products mobile screens](wireframes/carproducts_mobile.png)
 
 ---
 

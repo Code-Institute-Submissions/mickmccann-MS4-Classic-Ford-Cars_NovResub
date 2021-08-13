@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    height: 450px;
+    height: 180px;
 }
 
 .discover-text {
@@ -71,9 +71,19 @@ body {
   background-color: #000 !important;
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #F7FFF7;
+  z-index: -1;
+}
 
 .footer-dark {
-    height: 280px;
+    margin-top: 50px;
+    height: 100%;
     padding:50px;
     color:#f0f9ff;
     background-color:#282d32;
@@ -143,7 +153,7 @@ body {
     margin-bottom:0;
   }
   
-  https://epicbootstrap.com/snippets/footer-dark
+  /* https://epicbootstrap.com/snippets/footer-dark */
 
 
 /* -------------------------------- Media Queries */
@@ -151,6 +161,7 @@ body {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
+    height: 180px;    
     max-width: 80%;
   }
 }
@@ -166,6 +177,7 @@ body {
     .footer-dark .item:not(.social) {
       text-align:center;
       padding-bottom:20px;
+      height: 100%;
     }
   }
 
