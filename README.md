@@ -142,6 +142,7 @@ In order to make it look like a genuine car dealers, I think it would look good 
 - To ensure website nav items are always within reach, a fixed-top class was added to prevent users from going on a scrolling mission to get to the navbar.
 
 - A search bar to search through the various cars.
+- With the user experience in mind, search entries are case insensitive, which means that 'Capri' and 'capri' will both give the same result. I opted to add this in because that's how users search for anything on Google.
 - The ability to sign up and create an account.
 - Superuser has the ability to maintain the website, by updating or deleting cars.
 - The ability to add cars to the 'bag' and see the cost dynamically update.

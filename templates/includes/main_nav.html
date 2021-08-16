@@ -7,7 +7,7 @@
             <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="all-cars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Cars
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-cars-link">
+            <div class="dropdown-menu border-4 shadow-lg rounded" aria-labelledby="all-cars-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
@@ -20,11 +20,11 @@
             <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="capri-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Capri
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="capri-link">
-                <a href="" class="dropdown-item">Capri MkI 1600 GT</a>
-                <a href="" class="dropdown-item">Capri 2.0 Mark 1</a>
-                <a href="" class="dropdown-item">Capri Rally Cars</a>
-                <a href="" class="dropdown-item">All Capri Cars</a>
+            <div class="dropdown-menu border-4 shadow-lg rounded" aria-labelledby="capri-link">
+                <a href="{% url 'products' %}?category=capri_mark_1" class="dropdown-item">Capri Mark 1</a>
+                <a href="{% url 'products' %}?category=capri_mark_2" class="dropdown-item">Capri Mark 2</a>
+                <a href="{% url 'products' %}?category=capri_rally_cars" class="dropdown-item">Capri Rally Cars</a>
+                <a href="{% url 'products' %}?category=capri_mark_1,capri_mark_2,capri_rally_cars" class="dropdown-item">All Capri Cars</a>
             </div>
         </li>
         
@@ -33,20 +33,20 @@
             <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="mustang-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mustang
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="mustang-link">
-                <a href="" class="dropdown-item">Mustang Mach 1</a>
-                <a href="" class="dropdown-item">Racing Mustangs</a>
-                <a href="" class="dropdown-item">All Mustang Cars</a>
+            <div class="dropdown-menu border-4 shadow-lg rounded" aria-labelledby="mustang-link">
+                <a href="{% url 'products' %}?category=mustang_mach_1" class="dropdown-item">Mustang Mach 1</a>
+                <a href="{% url 'products' %}?category=racing_mustangs" class="dropdown-item">Racing Mustangs</a>
+                <a href="{% url 'products' %}?category=mustang_mach_1,racing_mustangs" class="dropdown-item">All Mustang Cars</a>
             </div>
         </li>
 
-        <!-- Special Offers -->
+        <!-- Special Projects -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-dark" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+            <a class="logo-font font-weight-bold nav-link text-dark" href="#" id="special-projects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Projects
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
+            <div class="dropdown-menu border-4 shadow-lg rounded" aria-labelledby="special-projects">
+                <a href="{% url 'products' %}?category=ford_gt_40" class="dropdown-item">Ford GT40</a>
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
         </li>
