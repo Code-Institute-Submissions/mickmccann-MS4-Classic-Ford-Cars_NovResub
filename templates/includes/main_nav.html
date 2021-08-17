@@ -8,9 +8,9 @@
                 All Cars
             </a>
             <div class="dropdown-menu border-4 shadow-lg rounded" aria-labelledby="all-cars-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=price&rating=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=price&category=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Cars</a>
             </div>
         </li>

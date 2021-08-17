@@ -8,6 +8,7 @@
             "price": 18500.00,
             "category": 1,
             "rating": 4.6,
+            "zero_to_sixty": 3.5,
             "image": "178618367.jpg"
         }
     }
