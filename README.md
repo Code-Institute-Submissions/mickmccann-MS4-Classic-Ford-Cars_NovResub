@@ -17,6 +17,7 @@ All design decisions have been made with the following goals in mind:
 
 - Easy to find your way around.
 - Responsiveness design.
+- Consistant design.
 
 ---
 
@@ -133,7 +134,14 @@ All images of the Ford cars have been sourced from [Dreamstime](https://www.drea
 
 One large hero image will cover half of the homepage. The main navbar will have a transparency background as to not take away from the main inmagery.
 
-In order to make it look like a genuine car dealers, I think it would look good if below the hero image, I had images of "employees". This feature came as an after thought prior to doing my wireframes.  
+In order to make it look like a genuine car dealers, I think it would look good if below the hero image, I had images of "employees". This feature came as an after thought prior to doing my wireframes.
+
+## Making Images Stand-Out
+
+In order to promote some decent UX for the potential customer, I decided to make the images stand-out by giving the card element a nice subtle shadow. 
+With the card being white, this feature looks great against the off-white colour used as the body background colour.
+
+![shadow cards](wireframes/shadow_cards.png)
 
 ---
 
@@ -142,6 +150,7 @@ In order to make it look like a genuine car dealers, I think it would look good 
 - To ensure website nav items are always within reach, a fixed-top class was added to prevent users from going on a scrolling mission to get to the navbar.
 
 - A search bar to search through the various cars.
+- Filtering, sorting and searching.
 - With the user experience in mind, search entries are case insensitive, which means that 'Capri' and 'capri' will both give the same result. I opted to add this in because that's how users search for anything on Google.
 - The ability to sign up and create an account.
 - Superuser has the ability to maintain the website, by updating or deleting cars.

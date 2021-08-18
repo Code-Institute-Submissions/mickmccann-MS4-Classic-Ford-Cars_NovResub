@@ -30,6 +30,9 @@ Ensure the appropiate filtering is applied when user is using the main navigatio
 Ensure cars are sorted By Price ascending | Cars are sorted by Price ascending ``` {% url 'products' %}?sort=price&direction=asc ``` | PASS
 Ensure cars are sorted By Rating descending | Cars are sorted by Rating descending ``` {% url 'products' %}?sort=rating&direction=desc ``` | PASS
 Ensure cars are sorted By Category descending | Cars are sorted by Category descending ``` {% url 'products' %}?sort=category&direction=asc ``` | PASS
+Ensure a clickable link with the approiate car category is in each card on the products page | A clickable link with the approiate car category is in each card on the products page. [Sorting category](wireframes/sorting_cat1.png) | PASS
+Ensure a clickable link with the approiate car category is displayed on the product details page | A clickable link with the approiate car category is displayed on the product details page. [Sorting category](wireframes/sorting_cat2.png) | PASS
+
 
 ---
 
@@ -48,6 +51,7 @@ Ensure when DISCOVER NOW button is clicked, user is directed to all products pag
 Ensure when a car is click on all products page, user is taken to the product detail page. | When a car is click on all products page, user is taken to the product detail page. [Product detail](wireframes/product_details.png) | PASS
 Ensure that when a user is in the product details page, should they click on the image, a larger image is opened up in a new browser tab. | When a user is in the product details page, should they click on the image, a larger image is opened up in a new browser tab. [Larger image](wireframes/larger_image.png) | PASS
 Ensure when a user clicks on the All Cars link in the main nav bar, user is directed to the all products page. | When a user clicks on the All Cars link in the main nav bar, user is directed to the all products page. | PASS
+Ensure when a user clicks on the car category link in the card of the products page they are then taken to the page that holds that category of cars. | When a user clicks on the car category link in the card of the products page they are then taken to the page that holds that category of cars. | PASS
  
 
 ---
