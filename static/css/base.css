@@ -152,6 +152,12 @@ body {
     font-size:13px;
     margin-bottom:0;
   }
+
+/* Styles for badges */
+  a.category-badge > span.badge:hover {
+    background-color: #282d32 !important;
+    color: white !important;
+  }
   
   /* https://epicbootstrap.com/snippets/footer-dark */
 

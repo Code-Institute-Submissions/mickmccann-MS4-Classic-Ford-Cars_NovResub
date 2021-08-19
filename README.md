@@ -143,6 +143,17 @@ With the card being white, this feature looks great against the off-white colour
 
 ![shadow cards](wireframes/shadow_cards.png)
 
+## Category Badges
+
+In order to keep the design of the badges inline with the cards, the same styling has been applied. This is good practice for keeping things consistent with the overall look and feel of the site. The badges gives the user instant feedback of how many categories a car appears in. These badges are also active links that take the user to the approiate page when clicked.
+
+![badges](wireframes/badges.png)
+
+Again, from the user experience's point of view, it's better that the badges have a hover affect on them. Not that this makes it more appealing, but it also informs the user that it is a clickable link.
+
+![badges hover](wireframes/badges_hover.png)
+
+
 ---
 
 # WEBSITE FEATURES
