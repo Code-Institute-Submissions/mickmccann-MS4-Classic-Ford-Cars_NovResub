@@ -39,6 +39,13 @@ All design decisions have been made with the following goals in mind:
 - As a first time customer, I would like to be able to search by category.
 - As a first time customer, I would like to be able to search the various different models with different search filters.
 - As a first time customer, I would like to view the car models according to price.
+- As a first time customer, I would like to see how many cars are in a product.
+
+[product amount](wireframes/product_amount.png)
+
+- As a first time customer, if I run a search for something, I expect to see my query ruturned, a count of the products, what I searched with a link back to the main products page.
+
+[search result](wireframes/search_result.png)
 
 ### **Browsing**
 - As a first time customer, I would like to see the car price.
