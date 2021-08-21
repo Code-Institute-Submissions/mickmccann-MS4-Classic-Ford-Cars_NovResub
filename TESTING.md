@@ -33,13 +33,14 @@ Ensure cars are sorted By Category descending | Cars are sorted by Category desc
 Ensure a clickable link with the approiate car category is in each card on the products page | A clickable link with the approiate car category is in each card on the products page. [Sorting category](wireframes/sorting_cat1.png) | PASS
 Ensure a clickable link with the approiate car category is displayed on the product details page | A clickable link with the approiate car category is displayed on the product details page. [Sorting category](wireframes/sorting_cat2.png) | PASS
 Ensure when a badge is clicked the approiate category is displayed. | When a badge is clicked the approiate category is displayed. | PASS
-Ensure SORT BY dropdown select sorts cars by Price (high to low) | SORT BY dropdown select sorts cars by Price (high to low) | PASS
-Ensure SORT BY dropdown select sorts cars by Price (low to high) | SORT BY dropdown select sorts cars by Price (low to high) | PASS
-Ensure SORT BY dropdown select sorts cars by Rating (high to low) | SORT BY dropdown select sorts cars by Rating (high to low) | PASS
-Ensure SORT BY dropdown select sorts cars by Name (A-Z) | SORT BY dropdown select sorts cars by Name (A-Z) | PASS
-Ensure SORT BY dropdown select sorts cars by Name (Z-A) | SORT BY dropdown select sorts cars by Name (Z-A) | PASS
-Ensure SORT BY dropdown select sorts cars by Category (A-Z) | SORT BY dropdown select sorts cars by Category (A-Z) | PASS
-Ensure SORT BY dropdown select sorts cars by Category (Z-A) | SORT BY dropdown select sorts cars by Category (Z-A) | PASS
+Ensure SORT BY dropdown select sorts cars by Price (high to low) | SORT BY dropdown select sorts cars by Price (high to low). [Sorting by price high to low](wireframes/high_to_low.png) | PASS
+Ensure SORT BY dropdown select sorts cars by Price (low to high) | SORT BY dropdown select sorts cars by Price (low to high). [Sorting by price low to high](wireframes/low_to_high.png) | PASS
+Ensure SORT BY dropdown select sorts cars by Rating (high to low) | SORT BY dropdown select sorts cars by Rating (high to low). [Sorting by rating high to low](wireframes/rating_high.png) | PASS
+Ensure SORT BY dropdown select sorts cars by Rating (low to high) | SORT BY dropdown select sorts cars by Rating (low to high). [Sorting by rating low to high](wireframes/rating_low.png) | PASS
+Ensure SORT BY dropdown select sorts cars by Name (A-Z) | SORT BY dropdown select sorts cars by Name (A-Z). [Sorting by name a-z](wireframes/name_a_z.png) | PASS
+Ensure SORT BY dropdown select sorts cars by Name (Z-A) | SORT BY dropdown select sorts cars by Name (Z-A). [Sorting by name z-a](wireframes/name_z_a.png) | PASS
+Ensure SORT BY dropdown select sorts cars by Category (A-Z) | SORT BY dropdown select sorts cars by Category (A-Z). [Sorting by category a-z](wireframes/category_a_z.png) | PASS
+Ensure SORT BY dropdown select sorts cars by Category (Z-A) | SORT BY dropdown select sorts cars by Category (Z-A). [Sorting by category z-a](wireframes/category_z_a.png) | PASS
 Ensure the amount of cars in a particular category are clearly displayed to the user. | The amount of cars in a particular category are clearly displayed to the user. [Cars in category](wireframes/product_amount.png) | PASS
 Ensure when a user searches for something, they see their query ruturned, a count of the products, what they searched, with a link back to the main products page. | When a user searches for something, they see their query ruturned, a count of the products, what they searched, with a link back to the main products page. [Search result](wireframes/search_result.png) | PASS
 

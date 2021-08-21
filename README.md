@@ -41,11 +41,46 @@ All design decisions have been made with the following goals in mind:
 - As a first time customer, I would like to view the car models according to price.
 - As a first time customer, I would like to see how many cars are in a product.
 
-[product amount](wireframes/product_amount.png)
+![product amount](wireframes/product_amount.png)
 
 - As a first time customer, if I run a search for something, I expect to see my query ruturned, a count of the products, what I searched with a link back to the main products page.
 
-[search result](wireframes/search_result.png)
+![search result](wireframes/search_result.png)
+
+- As a first time customer, I would like the ability to arrange cars by price from high to low.
+
+![high to low](wireframes/high_to_low.png)
+
+- As a first time customer, I would like the ability to arrange cars by price from low to high.
+
+![low to high](wireframes/low_to_high.png)
+
+- As a first time customer, I would like the ability to arrange cars by name from a to z.
+
+![name a - z](wireframes/name_a_z.png)
+
+- As a first time customer, I would like the ability to arrange cars by name from z to a.
+
+![name z - a](wireframes/name_z_a.png)
+
+- As a first time customer, I would like the ability to arrange cars by rating from high to low.
+
+![rating high to low](wireframes/rating_high.png)
+
+- As a first time customer, I would like the ability to arrange cars by rating from low to high.
+
+![rating low to high](wireframes/rating_low.png)
+
+- As a first time customer, I would like the ability to arrange cars by category from a to z.
+
+![category a to z](wireframes/category_a_z.png)
+
+- As a first time customer, I would like the ability to arrange cars by category from z to a.
+
+![category z to a](wireframes/category_z_a.png)
+
+
+
 
 ### **Browsing**
 - As a first time customer, I would like to see the car price.
