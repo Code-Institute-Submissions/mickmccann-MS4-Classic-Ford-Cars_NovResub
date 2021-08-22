@@ -160,8 +160,7 @@ body {
   }
 
 /* Styles for back-to-top button */
-  .btt-button {
-    scroll-behavior: smooth;
+#scrollToTopBtn {
     border-radius: 4px;
     height: 42px;
     width: 42px;
@@ -170,11 +169,7 @@ body {
     right: 10px;
 }
 
-  .btt-link:hover {
-    cursor: pointer;
-}
- 
-  /* https://epicbootstrap.com/snippets/footer-dark */
+/* https://epicbootstrap.com/snippets/footer-dark */
 
 
 /* -------------------------------- Media Queries */

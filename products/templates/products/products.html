@@ -122,19 +122,27 @@
     </div>
 </div>
 <!-- Back-to-top button -->
-<div class="btt-button shadow-sm rounded-8 shadow border">
-    <a class="btt-link d-flex h-100 bg-light shadow">
-        <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
-    </a>	
-</div>
+<button id="scrollToTopBtn">
+    <i class="fas fa-chevron-up text-black"></i>
+</button>
 {% endblock %}
 {% block postloadjs %}
     {{ block.super }}
+    
     <!-- Script for back-to-top button -->
     <script type="text/javascript">
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
+        let scrollToTopBtn = document.getElementById("scrollToTopBtn")
+        let rootElement = document.documentElement
+
+        function scrollToTop() {
+            // Scroll to top logic
+            rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+         })
+        }
+
+        scrollToTopBtn.addEventListener("click", scrollToTop)
 	</script>
 
     <!-- Script to make the Sort By dropdown select work -->

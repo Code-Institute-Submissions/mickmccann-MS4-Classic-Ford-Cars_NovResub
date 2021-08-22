@@ -196,6 +196,8 @@ Again, from the user experience's point of view, it's better that the badges hav
 
 It's good UX design to have a Back-To-Top button when dealing with many products. At the time of implementing this feature, I have only 7 cars added so it probably doesn't seem like a worthwhile addition, but I will add more cars at the end! And keeping the design consistant, I've kept the styles the same as the badges. With the hover effect, though, I was unable to change the font awasome icon colour with the hover effect.
 
+Rather than having a Back-To-Top button that just snaps back to the top, I opted to have one with a nice smooth scrolling. I chose this affect because if you have scolled down throughout say maybe 100 different products, your eyes get stuck into a bit of a trance. Having a Back-To-Top button that just snaps up up can leave the user a bit lost as they are jolted out of their trance. A smooth scrolling, guides the user's eye upward, which makes for a better experience for the user, particulary the first time visitor.
+
 ![back to top](wireframes/back_to_top.png)
 
 
