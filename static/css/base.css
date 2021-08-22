@@ -158,7 +158,22 @@ body {
     background-color: #282d32 !important;
     color: white !important;
   }
-  
+
+/* Styles for back-to-top button */
+  .btt-button {
+    scroll-behavior: smooth;
+    border-radius: 4px;
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+  .btt-link:hover {
+    cursor: pointer;
+}
+ 
   /* https://epicbootstrap.com/snippets/footer-dark */
 
 

@@ -80,8 +80,6 @@ All design decisions have been made with the following goals in mind:
 ![category z to a](wireframes/category_z_a.png)
 
 
-
-
 ### **Browsing**
 - As a first time customer, I would like to see the car price.
 
@@ -169,7 +167,6 @@ The remainding colours will be used for buttons and navigational links.
 
 ![Colour theme](wireframes/colour_theme.png)
 
-
 ## Website Imagery
 
 All images of the Ford cars have been sourced from [Dreamstime](https://www.dreamstime.com).
@@ -191,9 +188,15 @@ In order to keep the design of the badges inline with the cards, the same stylin
 
 ![badges](wireframes/badges.png)
 
-Again, from the user experience's point of view, it's better that the badges have a hover affect on them. Not that this makes it more appealing, but it also informs the user that it is a clickable link.
+Again, from the user experience's point of view, it's better that the badges have a hover affect on them. this makes it more appealing, and it also informs the user that it is a clickable link.
 
 ![badges hover](wireframes/badges_hover.png)
+
+## Back To Top
+
+It's good UX design to have a Back-To-Top button when dealing with many products. At the time of implementing this feature, I have only 7 cars added so it probably doesn't seem like a worthwhile addition, but I will add more cars at the end! And keeping the design consistant, I've kept the styles the same as the badges. With the hover effect, though, I was unable to change the font awasome icon colour with the hover effect.
+
+![back to top](wireframes/back_to_top.png)
 
 
 ---
@@ -210,7 +213,7 @@ Again, from the user experience's point of view, it's better that the badges hav
 - The ability to add cars to the 'bag' and see the cost dynamically update.
 - If something is in the 'bag', font will be bold and a diffrent colour to give the user visual feedback.
 - Fixtures is used in order to load data very quickly into a django database so we don't have to do it all manually in the admin.
-
+- Simple back to top button.
 
 ## Featured Installed Apps
 
