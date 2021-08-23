@@ -128,8 +128,9 @@
 {% endblock %}
 {% block postloadjs %}
     {{ block.super }}
-    
+
     <!-- Script for back-to-top button -->
+    <!-- https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ -->
     <script type="text/javascript">
         let scrollToTopBtn = document.getElementById("scrollToTopBtn")
         let rootElement = document.documentElement

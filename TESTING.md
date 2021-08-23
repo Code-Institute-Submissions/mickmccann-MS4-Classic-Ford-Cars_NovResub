@@ -6,7 +6,7 @@ Testing user stories goes here
 
 # DJANGO TESTING
 
-## Django Unit Testing
+## Django Unit and Template Testing
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
@@ -16,7 +16,9 @@ Ensure login system redirects back to the login redirect url in settings | Login
 Ensure the appropiate categories are loaded with the correct fixtures | The appropiate categories are loaded with the correct fixtures. [Load data categories](wireframes/loaddata_categories.png) | PASS
 Ensure the appropiate products are loaded with the correct fixtures | The appropiate products are loaded with the correct fixtures. [Load data products](wireframes/loaddata_products.png) | PASS
 Ensure in Django Admin 'Categorys' is changed to 'Categories' and the friendly name is diaplayed | in Django Admin 'Categorys' is changed to 'Categories' and the friendly name is diaplayed. [Friendly name](wireframes/friendly_name.png) | PASS
-Ensure all car models are displaying on the page with the correct url | All car models are displaying on the page with the correct url. [All products test](wireframes/all_products.png) | PASS 
+Ensure all car models are displaying on the page with the correct url | All car models are displaying on the page with the correct url. [All products test](wireframes/all_products.png) | PASS
+Ensure the cart page renders correctly. | The cart page renders correctly when the users clicks or taps on delivery truck. [Cart page render](wireframes/cart_page.png) | PASS
+Ensure that if no items are in the cart, text is displayed telling the user. | If no items are in the cart, text is displayed telling the user. [Empty cart](wireframes/empty_cart.png) | PASS
 
 
 ## Searching and Filtering
@@ -65,6 +67,7 @@ Ensure when a user clicks on the All Cars link in the main nav bar, user is dire
 Ensure when a user clicks on the car category link in the card of the products page they are then taken to the page that holds that category of cars. | When a user clicks on the car category link in the card of the products page they are then taken to the page that holds that category of cars. | PASS
 Ensure when a user hovers over a badge, the colours invert. | When a user hovers over a badge, the colours invert. [badges hover](wireframes/badges_hover.png) | PASS
 Ensure Back-To-Top button takes the user back to the top of the page when clicked. | Back-To-Top button takes the user back to the top of the page when clicked. | PASS
+Ensure when on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | When on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | PASS
 
 ---
 

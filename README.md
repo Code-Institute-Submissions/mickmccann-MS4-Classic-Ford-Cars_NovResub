@@ -80,13 +80,17 @@ All design decisions have been made with the following goals in mind:
 ![category z to a](wireframes/category_z_a.png)
 
 
-### **Browsing**
+### **Browsing / Purchasing**
 - As a first time customer, I would like to see the car price.
 
 - As a first time customer, I would like to see a brief description.
 - As a first time customer, I would like to be able to add cars to my shopping cart.
 - As a first time customer, I would like to be notified on screen when cars are put in the shopping cart or when certain interactions are made.
 - As a first time customer, I would like to be able to edit my shopping cart.
+- As a first time customer, I would like to know whether there's something in my cart.
+
+![Empty cart](wireframes/empty_cart.png)
+
 - As a first time customer, I would like the checkout process to be easy without having to be taken to any additional pages.
 - As a first time customer, I would like confirmation of my order to be emailed to my email address.
 
@@ -231,7 +235,8 @@ Rather than having a Back-To-Top button that just snaps back to the top, I opted
 - allauth.account
 - allauth.socialaccount
 - home
-- cars
+- products
+- cart
 
 ---
 
