@@ -19,6 +19,7 @@ Ensure in Django Admin 'Categorys' is changed to 'Categories' and the friendly n
 Ensure all car models are displaying on the page with the correct url | All car models are displaying on the page with the correct url. [All products test](wireframes/all_products.png) | PASS
 Ensure the cart page renders correctly. | The cart page renders correctly when the users clicks or taps on delivery truck. [Cart page render](wireframes/cart_page.png) | PASS
 Ensure that if no items are in the cart, text is displayed telling the user. | If no items are in the cart, text is displayed telling the user. [Empty cart](wireframes/empty_cart.png) | PASS
+Enusre the Free Mechanical Services threshold is consistently displayed on every page throughout the site. | The Free Mechanical Services threshold is consistently displayed on every page throughout the site. | PASS
 
 
 ## Searching and Filtering
