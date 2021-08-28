@@ -48,12 +48,12 @@
 
   <!-- Shopping Cart -->
   <li class="list-inline-item">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
+      <a class="{% if grand_total %}shadow rounded-8 text-white{% else %}text-dark{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
           <div class="text-center">
               <div><i class="fas fa-shipping-fast fa-lg text-dark"></i></div>
               <p class="my-0 text-dark">
                   {% if grand_total %}
-                      ${{ grand_total|floatformat:2 }}
+                      €{{ grand_total|floatformat:2 }}
                   {% else %}
                       €0.00
                   {% endif %}

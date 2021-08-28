@@ -20,7 +20,8 @@ Ensure all car models are displaying on the page with the correct url | All car 
 Ensure the cart page renders correctly. | The cart page renders correctly when the users clicks or taps on delivery truck. [Cart page render](wireframes/cart_page.png) | PASS
 Ensure that if no items are in the cart, text is displayed telling the user. | If no items are in the cart, text is displayed telling the user. [Empty cart](wireframes/empty_cart.png) | PASS
 Enusre the Free Mechanical Services threshold is consistently displayed on every page throughout the site. | The Free Mechanical Services threshold is consistently displayed on every page throughout the site. | PASS
-Ensure items are added to the cart. | Items are added to the cart. [Add to cart test](wireframes/cart_test.png) | PASS
+Ensure items are added to the cart and are displaying in the terminal. | Items are added to the cart and are displaying in the terminal. [Add to cart test](wireframes/cart_test_1.png) | PASS
+Ensure items are visible in the cart with the correct price attached. | Items are visible in the cart with the correct price attached. [Add to cart test](wireframes/cart_test.png) | PASS
 
 
 ## Searching and Filtering
@@ -137,3 +138,11 @@ Ensure Car Products page displays as intended across devices and laptops.
 ---
 
 # BUGS AND ISSUES
+
+## Unsupported Operand
+
+Kept on getting unsupported operand type for *: 'NoneType' and 'decimal.Decimal'
+
+![unsupported operand](wireframes/unsupported_operand.png)
+
+I resolved this bug by changing ``` quantity = int(request.POST.get('quantity')) ``` to ``` quantity = 1 ```
