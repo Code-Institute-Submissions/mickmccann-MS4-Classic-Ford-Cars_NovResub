@@ -85,6 +85,9 @@ All design decisions have been made with the following goals in mind:
 
 - As a first time customer, I would like to see a brief description.
 - As a first time customer, I would like to be able to add cars to my shopping cart.
+
+![Cart items test](wireframes/cart_items.png)
+
 - As a first time customer, I would like to be notified on screen when cars are put in the shopping cart or when certain interactions are made.
 - As a first time customer, I would like to be able to edit my shopping cart.
 - As a first time customer, I would like to know whether there's something in my cart.

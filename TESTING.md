@@ -22,6 +22,8 @@ Ensure that if no items are in the cart, text is displayed telling the user. | I
 Enusre the Free Mechanical Services threshold is consistently displayed on every page throughout the site. | The Free Mechanical Services threshold is consistently displayed on every page throughout the site. | PASS
 Ensure items are added to the cart and are displaying in the terminal. | Items are added to the cart and are displaying in the terminal. [Add to cart test](wireframes/cart_test_1.png) | PASS
 Ensure items are visible in the cart with the correct price attached. | Items are visible in the cart with the correct price attached. [Add to cart test](wireframes/cart_test.png) | PASS
+Ensure items are added to the cart displaying, images and prices accordingly. | Items are added to the cart displaying, images and prices accordingly. [Cart items test](wireframes/cart_items.png) | PASS
+Ensure items in the cart add up to the correct amount, are displayed to the user in the cart and in the menu. | Items in the cart add up to the correct amount, are displayed to the user in the cart and in the menu. [Cart items test](wireframes/cart_items.png) | PASS
 
 
 ## Searching and Filtering
@@ -135,6 +137,22 @@ Ensure Car Products page displays as intended across devices and laptops.
 
 ![products mobile screens](wireframes/carproducts_mobile.png)
 
+## Cart Page
+
+Ensure items on the Cart page displays as intended across devices and laptops.
+
+- The Cart page displays as intended on laptop and larger screens.
+
+![Cart page larger screens](wireframes/cart_items.png)
+
+- The Cart page displays as intended on smaller screens.
+
+![Cart page smaller screens](wireframes/cart_tablet.png)
+
+- The Cart page displays as intended on mobile screens.
+
+![Cart page mobile screens](wireframes/cart_mobile.png)
+
 ---
 
 # BUGS AND ISSUES
@@ -145,4 +163,10 @@ Kept on getting unsupported operand type for *: 'NoneType' and 'decimal.Decimal'
 
 ![unsupported operand](wireframes/unsupported_operand.png)
 
-I resolved this bug by changing ``` quantity = int(request.POST.get('quantity')) ``` to ``` quantity = 1 ```
+- I resolved this bug by changing ``` quantity = int(request.POST.get('quantity')) ``` to ``` quantity = 1 ```
+
+## Footer Issue
+
+Struggling to get the Footer to display at the bottom of the page across the website. Tried numerous different properties and Bootstrap classes for a fix.
+
+![Footer issue](wireframes/footer_issue.png)

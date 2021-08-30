@@ -19,11 +19,11 @@
                 <hr>
             </div>
         </div>
-        <!-- Prints out items in the cart -->
+        <!-- Displays items in the cart -->
         <div class="row">
             <div class="col">
                 {% if cart_items %}
-                    <div class="fixed table-responsive p-3 card rounded-12 shadow">
+                    <div class="table-hover p-3 card rounded-12 shadow">
                         <table class="table table-sm bg-white">
                             <thead class="text-dark text-uppercase">
                                 <tr>
@@ -56,14 +56,14 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                    <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: €{{ free_mech_delta|floatformat:2 }}</h6>
+                                    <h6><strong class="text-danger">Cart Total: €{{ total|floatformat:2 }}</strong></h6>
+                                    <!--<h6>Delivery: €{{ free_mech_delta|floatformat:2 }}</h6>
                                     <div class="mt-4 text-danger"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></div>
                                     {% if free_mech_delta > 0 %}
                                         <p class="mb-1 text-danger">
                                             You could get free delivery by spending just <strong>${{ free_mech_services_delta }}</strong> more!
                                         </p>
-                                    {% endif %}
+                                    {% endif %}-->
                                 </td>
                             </tr>
                             <tr>
