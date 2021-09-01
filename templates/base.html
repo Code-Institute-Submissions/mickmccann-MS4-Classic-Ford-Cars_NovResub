@@ -118,22 +118,19 @@
                     {% include 'includes/main_nav.html' %}
             </nav>
         </div>
-
     </header>
-    
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
 
     {% block page_header %}
     {% endblock %}
-
+    <main class="content">
     {% block content %}
     {% endblock %}
-
+    </main>
     {% block postloadjs %}
     {% endblock %}
-    <!-- Footer -->
     {% include 'includes/footer.html' %}
   </body>
 </html>
