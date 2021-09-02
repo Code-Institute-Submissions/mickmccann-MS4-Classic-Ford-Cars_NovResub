@@ -170,3 +170,5 @@ Kept on getting unsupported operand type for *: 'NoneType' and 'decimal.Decimal'
 Struggling to get the Footer to display at the bottom of the page across the website. Tried numerous different properties and Bootstrap classes for a fix.
 
 ![Footer issue](wireframes/footer_issue.png)
+
+- I resolved this issue by changing a couple of conflicting CSS rules
