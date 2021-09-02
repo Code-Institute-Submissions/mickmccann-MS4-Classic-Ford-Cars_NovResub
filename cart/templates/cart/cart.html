@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col">
                 {% if cart_items %}
-                    <div class="table-hover p-3 card rounded-12 shadow">
+                    <div class="table p-3 card rounded-12 shadow">
                         <table class="table table-sm bg-white">
                             <thead class="text-dark text-uppercase">
                                 <tr>
@@ -38,6 +38,9 @@
                                 <tr>
                                     <td class="p-3 w-25">
                                         <img class="card shadow img-fluid rounded-8" src="{{ item.product.image.url }}">
+                                        <a class="remove-item text-danger mt-2 float-left" id="remove_{{ item.item_id }}">
+                                            <button type="button" class="btn shadow btn-outline-warning">Remove Car</button>
+                                        </a>
                                     </td>
                                     <td class="p-3 w-25">
                                         <p class="my-0">{{ item.product.name }}</p>
@@ -96,4 +99,26 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+
+// Removes a car from the cart and reloads on click
+$('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('size');
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
+
 {% endblock %}

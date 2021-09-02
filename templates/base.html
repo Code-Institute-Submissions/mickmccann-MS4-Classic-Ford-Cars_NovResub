@@ -50,7 +50,7 @@
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font my-0">Classic Ford Cars</h2>
+                    <h2 class="logo-font my-0"><strong>Classic Ford Cars</strong></h2>
                 </a>
             </div>
             <!-- Search Bar -->
@@ -125,10 +125,10 @@
 
     {% block page_header %}
     {% endblock %}
-
+    <main class="content">
     {% block content %}
     {% endblock %}
-
+    </main>
     {% block postloadjs %}
     {% endblock %}
     {% include 'includes/footer.html' %}
