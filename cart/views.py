@@ -1,11 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 
 # Create your views here.
 
 
 def view_cart(request):
     """ A view that renders the cart contents """
-
     return render(request, 'cart/cart.html')
 
 
@@ -30,3 +29,6 @@ def remove_from_cart(request, item_id):
 
     cart = request.session.get('cart', {})
     cart.pop(item_id)
+    request.session['cart'] = cart
+
+    return HttpResponse(status=200)  

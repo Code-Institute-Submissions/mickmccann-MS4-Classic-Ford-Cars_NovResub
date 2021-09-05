@@ -24,6 +24,7 @@ Ensure items are added to the cart and are displaying in the terminal. | Items a
 Ensure items are visible in the cart with the correct price attached. | Items are visible in the cart with the correct price attached. [Add to cart test](wireframes/cart_test.png) | PASS
 Ensure items are added to the cart displaying, images and prices accordingly. | Items are added to the cart displaying, images and prices accordingly. [Cart items test](wireframes/cart_items.png) | PASS
 Ensure items in the cart add up to the correct amount, are displayed to the user in the cart and in the menu. | Items in the cart add up to the correct amount, are displayed to the user in the cart and in the menu. [Cart items test](wireframes/cart_items.png) | PASS
+Ensure users are able to delete cars from the cart. | Users are able to delete cars from the cart. When a user clicks on the Remove Car button, car is removed, the total is amended and the page reloads. | PASS
 
 
 ## Searching and Filtering
@@ -172,3 +173,11 @@ Struggling to get the Footer to display at the bottom of the page across the web
 ![Footer issue](wireframes/footer_issue.png)
 
 - I resolved this issue by changing a couple of conflicting CSS rules
+
+## 500 Error in Cart
+
+When I tried to remove a car from my cart I kept on getting a 500 error
+
+![Cart issue](wireframes/cart_issue.png)
+
+- I resolved this bug by adding in this line of code ```request.session['cart'] = cart``` in my views.py

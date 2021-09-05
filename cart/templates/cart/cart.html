@@ -122,6 +122,8 @@ $('.remove-item').click(function(e) {
     $.post(url, data)
     .done(function() {
         location.reload();
+
+        console.log(itemId)
     });
 })
 
