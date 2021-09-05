@@ -23,3 +23,10 @@ def add_to_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(redirect_url)
+
+
+def remove_from_cart(request, item_id):
+    """ Remove car from the cart """
+
+    cart = request.session.get('cart', {})
+    cart.pop(item_id)

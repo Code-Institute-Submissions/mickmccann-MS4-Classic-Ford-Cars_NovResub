@@ -36,24 +36,30 @@
                             </thead>
                             {% for item in cart_items %}
                                 <tr>
-                                    <td class="p-3 w-25">
+                                    <td class="py-3 w-25">
                                         <img class="card shadow img-fluid rounded-8" src="{{ item.product.image.url }}">
-                                        <a class="remove-item text-danger mt-2 float-left" id="remove_{{ item.item_id }}">
-                                            <button type="button" class="btn shadow btn-outline-warning">Remove Car</button>
-                                        </a>
                                     </td>
                                     <td class="p-3 w-25">
+                                        <!-- Product name -->
                                         <p class="my-0">{{ item.product.name }}</p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                        <!-- Remove car from cart button -->
+                
+                                            <a class="remove-item text-danger mt-2 float-left" id="remove_{{ item.item_id }}" data-product="{{ item.product }}">
+                                                <button type="button" class="btn shadow btn-outline-danger text-uppercase">
+                                                    Remove Car
+                                                </button>
+                                            </a>
                                     </td>
-                                    <td class="p-3">
+                                    <td class="py-3 w-25">
+                                        <!-- Product price -->
                                         <p class="mx-auto">€{{ item.product.price }}</p>
                                     </td>
-                                    <td class="p-3 w-25">
+                                    <td class="py-3 w-25">
                                         <p class="my-0">{{ item.quantity }}</p>
                                     </td>
-                                    <td class="p-3">
-                                        <p class="my-0">{{ item.product.price }}</p>
+                                    <td class="py-3">
+                                        <p class="my-0">€{{ item.product.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -93,7 +99,7 @@
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="text-uppercase">Keep Browsing Cars.</span>
+                        <span class="text-uppercase">Keep Browsing Cars</span>
                     </a>
                 {% endif %}
             </div>
@@ -108,17 +114,16 @@
 
 // Removes a car from the cart and reloads on click
 $('.remove-item').click(function(e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('size');
-        var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+    let csrfToken = "{{ csrf_token }}"
+    let itemId = $(this).attr('id').split('remove_')[1];
+    let url = `/cart/remove/${itemId}/`;
+    let data = {'csrfmiddlewaretoken': csrfToken}
 
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
+    $.post(url, data)
+    .done(function() {
+        location.reload();
+    });
+})
+
 </script>
-
 {% endblock %}
