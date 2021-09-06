@@ -75,6 +75,7 @@ Ensure when a user hovers over a badge, the colours invert. | When a user hovers
 Ensure Back-To-Top button takes the user back to the top of the page when clicked. | Back-To-Top button takes the user back to the top of the page when clicked. | PASS
 Ensure when on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | When on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | PASS
 
+
 ---
 
 # DETAILED TESTING
