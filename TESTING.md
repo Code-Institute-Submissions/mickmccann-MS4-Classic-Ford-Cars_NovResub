@@ -25,6 +25,8 @@ Ensure items are visible in the cart with the correct price attached. | Items ar
 Ensure items are added to the cart displaying, images and prices accordingly. | Items are added to the cart displaying, images and prices accordingly. [Cart items test](wireframes/cart_items.png) | PASS
 Ensure items in the cart add up to the correct amount, are displayed to the user in the cart and in the menu. | Items in the cart add up to the correct amount, are displayed to the user in the cart and in the menu. [Cart items test](wireframes/cart_items.png) | PASS
 Ensure users are able to delete cars from the cart. | Users are able to delete cars from the cart. When a user clicks on the Remove Car button, car is removed, the total is amended and the page reloads. | PASS
+Ensure the appropiate toast message is displayed when a user adds a car to the cart. | The appropiate toast message is displayed when a user adds a car to the cart. [Toast message success 1](wireframes/car_added_success.png) | PASS
+Ensure the appropiate toast message is displayed when a user removes a car from the cart. | The appropiate toast message is displayed when a user removes a car from the cart. [Toast message success 2](wireframes/car_removed_toast.png) | PASS
 
 
 ## Searching and Filtering
@@ -51,6 +53,7 @@ Ensure SORT BY dropdown select sorts cars by Category (A-Z) | SORT BY dropdown s
 Ensure SORT BY dropdown select sorts cars by Category (Z-A) | SORT BY dropdown select sorts cars by Category (Z-A). [Sorting by category z-a](wireframes/category_z_a.png) | PASS
 Ensure the amount of cars in a particular category are clearly displayed to the user. | The amount of cars in a particular category are clearly displayed to the user. [Cars in category](wireframes/product_amount.png) | PASS
 Ensure when a user searches for something, they see their query ruturned, a count of the products, what they searched, with a link back to the main products page. | When a user searches for something, they see their query ruturned, a count of the products, what they searched, with a link back to the main products page. [Search result](wireframes/search_result.png) | PASS
+Ensure the appropiate toast message is displayed to the user if they put in any search queries and press enter anyway. | The appropiate toast message is displayed to the user if they put in any search queries and press enter anyway. [Search error](wireframes/search_error_toast.png) | PASS
 
 
 ---
