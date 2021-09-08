@@ -207,6 +207,13 @@ Rather than having a Back-To-Top button that just snaps back to the top, I opted
 
 ![back to top](wireframes/back_to_top.png)
 
+## Bootstrap Toast Notifications
+
+Bootstrap Toast Notifications are lightweight notifications designed to mimic the push notifications that have been popularised by mobile and desktop operating systems in recent years. Toasts provide the user with realtime information, in my case their items being added to the cart. The toast has a preview of what they are ordering and a link to the checkout page.
+
+Toasts are great for the user's UX as they can casually browse an e-commerce website, adding items to their cart without having to go to the checkout page to see what's in the cart.
+
+![toast nods](wireframes/toast_nods.png)
 
 ---
 
@@ -223,6 +230,7 @@ Rather than having a Back-To-Top button that just snaps back to the top, I opted
 - If something is in the 'bag', font will be bold and a diffrent colour to give the user visual feedback.
 - Fixtures is used in order to load data very quickly into a django database so we don't have to do it all manually in the admin.
 - Simple back to top button.
+- Bootstrap Toast Notifications
 
 ## Featured Installed Apps
 

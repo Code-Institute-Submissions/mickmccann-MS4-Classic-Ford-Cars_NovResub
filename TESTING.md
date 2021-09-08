@@ -27,6 +27,9 @@ Ensure items in the cart add up to the correct amount, are displayed to the user
 Ensure users are able to delete cars from the cart. | Users are able to delete cars from the cart. When a user clicks on the Remove Car button, car is removed, the total is amended and the page reloads. | PASS
 Ensure the appropiate toast message is displayed when a user adds a car to the cart. | The appropiate toast message is displayed when a user adds a car to the cart. [Toast message success 1](wireframes/car_added_success.png) | PASS
 Ensure the appropiate toast message is displayed when a user removes a car from the cart. | The appropiate toast message is displayed when a user removes a car from the cart. [Toast message success 2](wireframes/car_removed_toast.png) | PASS
+Ensure the product image is displayed within the toast notifications. | The product image is displayed within the toast notifications. [toast image](toast_nods.png) | PASS
+Ensure the total cost is displayed within the toast notifications. | The total cost is displayed within the toast notifications. [toast image](toast_nods.png) | PASS
+Ensure the CHECKOUT button takes the user to the checkout page. | The CHECKOUT button takes the user to the checkout page. | PASS
 
 
 ## Searching and Filtering
