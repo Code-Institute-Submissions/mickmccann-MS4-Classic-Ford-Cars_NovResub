@@ -230,7 +230,7 @@ Toasts are great for the user's UX as they can casually browse an e-commerce web
 - If something is in the 'bag', font will be bold and a diffrent colour to give the user visual feedback.
 - Fixtures is used in order to load data very quickly into a django database so we don't have to do it all manually in the admin.
 - Simple back to top button.
-- Bootstrap Toast Notifications
+- Bootstrap Toast Notifications.
 
 ## Featured Installed Apps
 
@@ -248,6 +248,7 @@ Toasts are great for the user's UX as they can casually browse an e-commerce web
 - home
 - products
 - cart
+- checkout
 
 ---
 
