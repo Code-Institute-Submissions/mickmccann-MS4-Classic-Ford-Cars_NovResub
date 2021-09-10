@@ -179,12 +179,20 @@ Struggling to get the Footer to display at the bottom of the page across the web
 
 ![Footer issue](wireframes/footer_issue.png)
 
-- I resolved this issue by changing a couple of conflicting CSS rules
+- I resolved this issue by changing a couple of conflicting CSS rules.
 
 ## 500 Error in Cart
 
-When I tried to remove a car from my cart I kept on getting a 500 error
+When I tried to remove a car from my cart I kept on getting a 500 error.
 
 ![Cart issue](wireframes/cart_issue.png)
 
 - I resolved this bug by adding in this line of code ```request.session['cart'] = cart``` in my views.py
+
+## Invalid Operations
+
+When I created the checkout app, I started to get this error when I ran the server.
+
+![Decimal error](wireframes/decimal_error.png)
+
+- I resolved this error by making amendments to my models.py in the checkout app. I then ran migrations again, which seems to have worked.
