@@ -215,6 +215,19 @@ Toasts are great for the user's UX as they can casually browse an e-commerce web
 
 ![toast nods](wireframes/toast_nods.png)
 
+
+## Checkout Page
+
+The form on the checkout page keeps the consistant design used throughout the website, maintaining the subtle use of Bootstrap cards and shadows.
+This form comes with the option to save the order to the user's profile.
+
+![checkout form](wireframes/checkout_form.png)
+
+The checkout buttons, again maintain the use of cards and shadows. The amount that's about to be charged to their credit card is in a red colour with an exclamation icon, warning the user of what will happen should they proceed.
+
+![checkout button](wireframes/checkout_button.png)
+
+
 ---
 
 # WEBSITE FEATURES
@@ -245,10 +258,14 @@ Toasts are great for the user's UX as they can casually browse an e-commerce web
 - allauth
 - allauth.account
 - allauth.socialaccount
-- home
-- products
-- cart
-- checkout
+- Home
+- Products
+- Cart
+- Checkout
+
+### Other
+
+- Crispy Forms
 
 ---
 

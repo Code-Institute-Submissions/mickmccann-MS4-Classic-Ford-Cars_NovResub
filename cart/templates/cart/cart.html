@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -82,7 +83,7 @@
                                         </span>
                                         <span class="text-uppercase">Keep Browsing</span>
                                     </a>
-                                    <a href="" class="btn btn-black rounded-8 shadow">
+                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-8 shadow">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
