@@ -103,6 +103,7 @@ main.content {
 
 /* Footer styles */
 .footer-dark {
+  margin-top: auto;
   flex-shrink: 0;
   color:#f0f9ff;
   background-color:#282d32;
@@ -264,6 +265,7 @@ a.category-badge>span.badge:hover {
 
 /* -------------------------------- Media Queries */
 
+/* Footer styles */
 @media (max-width:767px) {
   .footer-dark .item:not(.social) {
     text-align:center;
@@ -312,8 +314,22 @@ a.category-badge>span.badge:hover {
     .header-container {
       padding-top: 116px;
     }
+    
+    .nav-link {
+      padding: 0.15rem;
+  }
+
+    .nav-link i.fa-lg {
+      font-size: 1rem;
+    }
+
+    .navbar-toggler {
+      padding: .6rem .6rem;
+      font-size: 1rem;
+    }
 
     body {
       height: calc(100vh - 116px);
     }
   }
+}

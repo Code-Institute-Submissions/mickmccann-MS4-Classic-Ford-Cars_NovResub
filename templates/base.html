@@ -49,11 +49,12 @@
 
         <!-- Top Nav -->
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0 text-center text-lg-left">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font my-0"><strong>Classic Ford Cars</strong></h2>
                 </a>
             </div>
+
             <!-- Search Bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0">
                 <form method="GET" action="{% url 'products' %}">
@@ -69,6 +70,7 @@
                     </div>
                 </form>
             </div>
+
             <!-- My Account -->
             <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -92,9 +94,10 @@
                             {% endif %}
                         </div>
                     </li>
+            
                     <!-- Shopping Cart -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %} shadow text-warning {% else %} text-white {% endif %} nav-link" href="{% url 'view_cart' %}">
+                        <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shipping-fast fa-lg"></i></div>
                                 <p class="my-0">
@@ -140,10 +143,10 @@
 
     {% block page_header %}
     {% endblock %}
-        <main class="content">
+    
         {% block content %}
         {% endblock %}
-        </main>
+    
     {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
