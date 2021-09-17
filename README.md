@@ -227,6 +227,13 @@ The checkout buttons, again maintain the use of cards and shadows. The amount th
 
 ![checkout button](wireframes/checkout_button.png)
 
+## Form Fields
+
+As a nice subtle effect for the UX in mind, when a user is filling out a field on the form, a nice drop shadow appears to indicate which part of the form they are currently on. This has the addition of some nice transition so that if a user is quickly tabbing their way through the form, the shadow effect just doesn't snap off.
+
+
+![form fields](wireframes/form_fields.png)
+
 
 ---
 
