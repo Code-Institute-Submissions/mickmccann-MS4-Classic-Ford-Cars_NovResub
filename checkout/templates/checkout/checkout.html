@@ -20,13 +20,13 @@
         <div class="row">
             <div class="col">
                 <hr>
-                    <h2 class="logo-font text-dark mb-4">Welcome to your order</h2>
+                    <h2 class="logo-font text-dark mb-0">Your order</h2>
                 <hr>
             </div>
         </div>
         <!-- Order form -->
         <div class="col col-sm-12">
-            <div class="row card shadow p-3">
+            <div class="row mb-4 card shadow p-3">
                 <div class="row">
                     <div class="py-3 col-12 col-lg-6 order-lg-last mb-5">
                         <p class="text-muted">Order Summary ({{ product_count }})</p>
@@ -112,12 +112,12 @@
                             <!-- Adjust cart button -->
                             <div class="col">
                                 <div class="card shadow row">
-                                    <div class="submit-button text-right p-3 mt-2 mb-3">
+                                    <div class="submit-button text-right p-3">
                                         <a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-8">
                                             <span class="icon">
                                                 <i class="fas fa-chevron-left"></i>
                                             </span>
-                                            <span class="font-weight-bold">Adjust Your Cart</span>
+                                            <span class="text-uppercase">Adjust Your Cart</span>
                                         </a>
                                         <!-- Complete order button -->
                                         <button id="submit-button" class="mb-0 shadow btn btn-black rounded-8">

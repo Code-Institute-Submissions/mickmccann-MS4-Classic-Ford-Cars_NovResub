@@ -164,6 +164,23 @@ Ensure items on the Cart page displays as intended across devices and laptops.
 
 ![Cart page mobile screens](wireframes/cart_mobile.png)
 
+## Checkout Page
+
+Ensure the Checkout page displays as intended across devices and laptops.
+
+- The Checkout page displays as intended on laptop and larger screens.
+
+![Checkout page larger screens](wireframes/checkout_lg.png)
+
+- The Checkout page displays as intended on smaller screens.
+
+![Checkout page smaller screens](wireframes/checkout_md_ls.png)
+![Checkout page smaller screens](wireframes/checkout_md_pr.png)
+
+- The Checkout page displays as intended on mobile screens.
+
+![Cart page mobile screens](wireframes/checkout_sm.png)
+
 ---
 
 # BUGS AND ISSUES
