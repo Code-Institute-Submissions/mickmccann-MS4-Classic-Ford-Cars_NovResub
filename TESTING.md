@@ -92,10 +92,11 @@ Ensure when on the cart page, clicking on the Keep Browsing Cars button returns 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Ensure the Stripe script is added to BASE.html | The Stripe script ```<script src="https://js.stripe.com/v3/"></script>``` is added to BASE.html within the block corejs. | PASS
-Ensure the postloadjs block contains ```{{ stripe_public_key|json_script:"id_stripe_public_key" }} {{ client_secret|json_script:"id_client_secret" }}``` within checkout.html. | The postloadjs block contains ```{{ stripe_public_key|json_script:"id_stripe_public_key" }} {{ client_secret|json_script:"id_client_secret" }}``` within checkout.html. | PASS
+Ensure the postloadjs block contains ```stripe_public_key json_script:"id_stripe_public_key"``` and ```client_secret json_script:"id_client_secret"``` within checkout.html. | The postloadjs block ```stripe_public_key json_script:"id_stripe_public_key"``` and ```client_secret json_script:"id_client_secret"``` within checkout.html. | PASS
 Ensure the Stripe public key is added to the context of the checkout views.py | The Stripe public key is added to the context of the checkout views.py | PASS
-Ensure the Stripe public key and client secret are being rendered to the browser. | The Stripe public key and client secret are being rendered to the browser. [Stripe test](wireframes/stripe_test.png) |
+Ensure the Stripe public key and client secret are being rendered to the browser. | The Stripe public key and client secret are being rendered to the browser. [Stripe test](wireframes/stripe_test.png) | PASS
 Ensure if an invalid credit card number is entered the card number turns red. | If an invalid credit card number is entered the card number turns red. [Invalid credit card](wireframes/invalid_credit_card.png) | PASS
+Ensure a message is displayed to the user if they input incorrect card details. | A message is displayed to the user if an invalid card number is inputted. [Invalid card message](wireframes/invalid_card_error.png)
 
 ---
 
