@@ -96,7 +96,11 @@ Ensure the postloadjs block contains ```stripe_public_key json_script:"id_stripe
 Ensure the Stripe public key is added to the context of the checkout views.py | The Stripe public key is added to the context of the checkout views.py | PASS
 Ensure the Stripe public key and client secret are being rendered to the browser. | The Stripe public key and client secret are being rendered to the browser. [Stripe test](wireframes/stripe_test.png) | PASS
 Ensure if an invalid credit card number is entered the card number turns red. | If an invalid credit card number is entered the card number turns red. [Invalid credit card](wireframes/invalid_credit_card.png) | PASS
-Ensure a message is displayed to the user if they input incorrect card details. | A message is displayed to the user if an invalid card number is inputted. [Invalid card message](wireframes/invalid_card_error.png)
+Ensure a message is displayed to the user if they input incorrect card details. | A message is displayed to the user if an invalid card number is inputted. [Invalid card message](wireframes/invalid_card_error.png) | PASS
+Ensure Stripe Public Keys and Secret Keys are added to Gitpod variables. | Stripe Public Keys and Secret Keys are added to Gitpod variables. [Gitpod variables](wireframes/gitpod_variables.png) | PASS
+Ensure Stripe payment intents are being rendered correctly, displaying as a list to the terminal. | Stripe payment intents are being rendered correctly, displaying as a list to the terminal. [Stripe payment intent test](wireframes/payment_intent.png) | PASS
+Ensure the core functionality of the payment process works by generating a successful payment intent. | The core functionality of the payment process works by generating a successful payment intent. [Stripe intent success1](wireframes/payment_intent_succeeded1.png) - [Stripe intent success2](wireframes/payment_intent_succeeded2.png) | PASS
+
 
 ---
 
