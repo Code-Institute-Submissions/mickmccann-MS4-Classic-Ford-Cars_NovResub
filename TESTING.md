@@ -100,6 +100,9 @@ Ensure a message is displayed to the user if they input incorrect card details. 
 Ensure Stripe Public Keys and Secret Keys are added to Gitpod variables. | Stripe Public Keys and Secret Keys are added to Gitpod variables. [Gitpod variables](wireframes/gitpod_variables.png) | PASS
 Ensure Stripe payment intents are being rendered correctly, displaying as a list to the terminal. | Stripe payment intents are being rendered correctly, displaying as a list to the terminal. [Stripe payment intent test](wireframes/payment_intent.png) | PASS
 Ensure the core functionality of the payment process works by generating a successful payment intent. | The core functionality of the payment process works by generating a successful payment intent. [Stripe intent success1](wireframes/payment_intent_succeeded1.png) - [Stripe intent success2](wireframes/payment_intent_succeeded2.png) | PASS
+Ensure when a user submits their payment informatiom, the order is created in a database. | When a user submits their payment informatiom, the order is created in a database. [Order database](wireframes/order_db.png) | PASS
+Ensure when a user submits their payment informatiom, they are redirected to a success page with a randomly generated order number. | When a user submits their payment informatiom, they are redirected to a success page with a randomly generated order number. [Order success](wireframe/order_success.png) | PASS
+Ensure when a user successfully purchases a car, their cart is emptied afterwards. | When a user successfully purchases a car, their cart is emptied afterwards. | PASS
 
 
 ---
