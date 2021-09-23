@@ -103,6 +103,8 @@ Ensure the core functionality of the payment process works by generating a succe
 Ensure when a user submits their payment informatiom, the order is created in a database. | When a user submits their payment informatiom, the order is created in a database. [Order database](wireframes/order_db.png) | PASS
 Ensure when a user submits their payment informatiom, they are redirected to a success page with a randomly generated order number. | When a user submits their payment informatiom, they are redirected to a success page with a randomly generated order number. [Order success](wireframe/order_success.png) | PASS
 Ensure when a user successfully purchases a car, their cart is emptied afterwards. | When a user successfully purchases a car, their cart is emptied afterwards. | PASS
+Ensure that when a purchase is made, an order summary is rendered on the checkout_success page. | When a purchase is made, an order summary is rendered on the checkout_success page. [Order summary](wireframes/order_summary.png) | PASS 
+Ensure that if a user doesn't fill out street_address2, county or postcode in the order form that these aren't rendered in the order sumnmary. | If a user doesn't fill out street_address2, county or postcode in the order form that these aren't rendered in the order sumnmary. [Order summary](wireframes/order_summary.png) | PASS
 
 
 ---
@@ -202,6 +204,23 @@ Ensure the Checkout page displays as intended across devices and laptops.
 - The Checkout page displays as intended on mobile screens.
 
 ![Cart page mobile screens](wireframes/checkout_sm.png)
+
+
+## Checkout Success Page
+
+Ensure the Checkout Success page displays as intended across devices and laptops.
+
+- The Checkout Success page displays as intended on laptop and larger screens.
+
+![Checkout success page larger screens](wireframes/order_summary.png)
+
+- The Checkout Success page displays as intended on smaller screens.
+
+![Checkput success page smaller screens](wireframes/checkout_success_tab.png)
+
+- The Checkout Success page displays as intended on mobile screens.
+
+![Checkput success page mobile screens](wireframes/success_mobile.png)
 
 ---
 
