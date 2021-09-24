@@ -235,6 +235,13 @@ As a nice subtle effect for the UX in mind, when a user is filling out a field o
 ![form fields](wireframes/form_fields.png)
 
 
+## Payment Spinner
+
+Sometimes when you make a purchase on website, you are left waiting for while to see if your payment is being accepted. When the user is left staring at the screen wondering if their payment is being accepted, they might hit refresh or the back button doing this can affect the payment process. So inorder to give the user some visual queue that something is happening, I added in a loading-spinner screen.
+
+![spinner](wireframes/spinner.png)
+
+
 ---
 
 # WEBSITE FEATURES
