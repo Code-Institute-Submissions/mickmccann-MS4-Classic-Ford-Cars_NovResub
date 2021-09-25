@@ -110,6 +110,17 @@ Testing Stripe authentication. | By using the test credit card number ```4000 00
 
 ---
 
+# STRIPE WEBHOOK TESTING
+
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Ensure Stripe webhook view is working. | Stripe webhook view is working. [Webhook Test1](wireframes/stripewh_terminal.png) - [Webhook Test2](wireframes/stripewh_test1.png) | PASS
+Ensure Stripe webhook payment intent succeeded is working as intended. | Stripe webhook payment intent succeeded is working as intended. [Webhook Test3](wireframes/payment_succeeded.png) | PASS
+Ensure Stripe webhook payment intent failed is working as intended. | Stripe webhook payment intent failed is working as intended. [Webhook Test4](wireframes/payment_failed.png) | PASS
+
+---
+
 # DETAILED TESTING
 
 
