@@ -118,7 +118,10 @@ TEST            | OUTCOME                          | PASS / FAIL
 Ensure Stripe webhook view is working. | Stripe webhook view is working. [Webhook Test1](wireframes/stripewh_terminal.png) - [Webhook Test2](wireframes/stripewh_test1.png) | PASS
 Ensure Stripe webhook payment intent succeeded is working as intended. | Stripe webhook payment intent succeeded is working as intended. [Webhook Test3](wireframes/payment_succeeded.png) | PASS
 Ensure Stripe webhook payment intent failed is working as intended. | Stripe webhook payment intent failed is working as intended. [Webhook Test4](wireframes/payment_failed.png) | PASS
-Ensure webhook handler prints out the intent coming from Stripe once the user makes a payment. | Webhook handler prints out the intent coming from Stripe once the user makes a payment. Biling info, shiping info and metadata are attached. [Webhook Test5](wireframes/wh_intent.png) |
+Ensure webhook handler prints out the intent coming from Stripe once the user makes a payment. | Webhook handler prints out the intent coming from Stripe once the user makes a payment. Biling info, shiping info and metadata are attached. [Webhook Test5](wireframes/wh_intent.png) | PASS
+Ensure that in the event of an impatient user, the webhook captures the intent and stores the order in the database. | In the event of an impatient user, the webhook captures the intent and stores the order in the database. | PASS
+Ensure that in the event a user accidentally closes the broswer window, their order remains in the cart when they come back to the site. | In the event a user accidentally closes the broswer window, their order remains in the cart when they come back to the site. | PASS
+If a user is filling out the order form and they hit submit but the close the browser, ensure the order does not go through. | If a user is filling out the order form and they hit submit but the close the browser, the order does not go through. | PASS
 
 ---
 
