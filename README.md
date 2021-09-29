@@ -242,6 +242,12 @@ Sometimes when you make a purchase on website, you are left waiting for while to
 ![spinner](wireframes/spinner.png)
 
 
+## Django Countries
+
+Rather than the user having to type in a country code when filing out the checkout form, they can select their country from a dropdown list. During testing I was using IR for Ireland, which I couldn't understand why the card was being declined. I should have been using IE, IR is Iran. A common mistake that could infuriate the user. Django Countries will eliminate this error from the user.
+
+![django countries](wireframes/django_countries.png)
+
 ---
 
 # WEBSITE FEATURES

@@ -33,6 +33,17 @@ Ensure the CHECKOUT button takes the user to the checkout page. | The CHECKOUT b
 Ensure the appropiate fields are added to the admin checkout. | The appropiate fields are added to the admin checkout. [Admin checkout](wireframes/admin_checkout.png) | PASS
 Ensure cripsy forms renders the correct fields. | Crispy forms renders the correct form fiels on the checkout page. Fields marked with an asterisk are required, preventing the form from being submitted unless these fields are filled out. | PASS
 Ensure on the checkout page a preview of what the user is buying, an image of the product, its cost and quantity. | On the checkout page a preview of what the user is buying, an image of the product, its cost and quantity. | PASS
+Ensure Django-Countries displays a dropdown list of countries. | Django-Countries displays a dropdown list of countries. | PASS
+Ensure Full Name contains an * and is required. Unless this field is entered the form is not submitted. | Full Name contains an * and is required. Unless this field is entered the form is not submitted. | PASS
+Ensure Email contains an * and is required. Unless this field is entered the form is not submitted. | Email contains an * and is required. Unless this field is entered the form is not submitted. | PASS
+Ensure Street Address1 contains an * and is required. Unless this field is entered the form is not submitted. | Street Address1 contains an * and is required. Unless this field is entered the form is not submitted. | PASS
+Ensure Phone Number contains an * and is required. Unless this field is entered the form is not submitted. | Phone Number contains an * and is required. Unless this field is entered the form is not submitted. | PASS
+Ensure Town Or City contains an * and is required. Unless this field is entered the form is not submitted. | Town Or City contains an * and is required. Unless this field is entered the form is not submitted. | PASS
+Ensure Country contains an * and is required. Unless this field is entered the form is not submitted. | Country contains an * and is required. Unless this field is entered the form is not submitted. | PASS
+
+
+
+---
 
 
 ## Searching and Filtering
