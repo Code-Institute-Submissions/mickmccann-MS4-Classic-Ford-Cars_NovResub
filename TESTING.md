@@ -40,7 +40,8 @@ Ensure Street Address1 contains an * and is required. Unless this field is enter
 Ensure Phone Number contains an * and is required. Unless this field is entered the form is not submitted. | Phone Number contains an * and is required. Unless this field is entered the form is not submitted. | PASS
 Ensure Town Or City contains an * and is required. Unless this field is entered the form is not submitted. | Town Or City contains an * and is required. Unless this field is entered the form is not submitted. | PASS
 Ensure Country contains an * and is required. Unless this field is entered the form is not submitted. | Country contains an * and is required. Unless this field is entered the form is not submitted. | PASS
-
+Ensure if a user enters invalid credentials, an error message is displayed telling them what went wrong. | If a user enters invalid credentials, an error message is displayed telling them what went wrong. [Sign In error](wireframes/sign_in_error.png) | PASS
+Ensure when a user signs in with the right credentials, an alert message is displayed telling them so. | When a user signs in with the right credentials, an alert message is displayed telling them so. [Sign In success](wireframes/sign_in_success.png) | PASS
 
 
 ---
@@ -248,6 +249,19 @@ Ensure the Checkout Success page displays as intended across devices and laptops
 - The Checkout Success page displays as intended on mobile screens.
 
 ![Checkput success page mobile screens](wireframes/success_mobile.png)
+
+
+## Sign In Page
+
+Ensure the Sign In page displays as intended across devices and laptops.
+
+- The Sign In page displays as intended on laptop and tablet screens.
+
+![Sign In page larger screens](wireframes/signin_larger.png)
+
+- The Sign In page displays as intended on mobile screens.
+
+![Sign In page mobile screens](wireframes/signin_mobile.png)
 
 ---
 
