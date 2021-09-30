@@ -282,6 +282,7 @@ Rather than the user having to type in a country code when filing out the checko
 - Products
 - Cart
 - Checkout
+- Profiles
 
 ### Other
 
