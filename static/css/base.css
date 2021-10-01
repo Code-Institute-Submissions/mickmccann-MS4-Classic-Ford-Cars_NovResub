@@ -324,6 +324,10 @@ color: #222;
 color: #17a2b8; /* text-info */
 }
 
+input[name='q']::placeholder {
+  color: #cfd7df;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Footer styles */
