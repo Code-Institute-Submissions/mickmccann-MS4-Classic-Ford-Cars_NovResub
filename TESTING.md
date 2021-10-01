@@ -41,8 +41,11 @@ Ensure Phone Number contains an * and is required. Unless this field is entered 
 Ensure Town Or City contains an * and is required. Unless this field is entered the form is not submitted. | Town Or City contains an * and is required. Unless this field is entered the form is not submitted. | PASS
 Ensure Country contains an * and is required. Unless this field is entered the form is not submitted. | Country contains an * and is required. Unless this field is entered the form is not submitted. | PASS
 Ensure if a user enters invalid credentials, an error message is displayed telling them what went wrong. | If a user enters invalid credentials, an error message is displayed telling them what went wrong. [Sign In error](wireframes/sign_in_error.png) | PASS
-Ensure when a user signs in with the right credentials, an alert message is displayed telling them so. | When a user signs in with the right credentials, an alert message is displayed telling them so. [Sign In success](wireframes/sign_in_success.png) | PASS
-
+Ensure when a user signs in with the right credentials, an alert message is displayed telling them so. | When a user signs in with the right credentials, an alert message is displayed telling them so. [Sign In success1](wireframes/sign_in_success.png) | PASS
+Ensure when a user signs up a confirmation email is sent to the user with a confirm link. | When a user signs up a confirmation email is sent to the user with a confirm link. This is carried out in the terminal at this point. [Confirm email1](wireframes/verify_email.png) | PASS
+When a user confirms their email address ensure a toast message is displayed to the user. | When a user confirms their email address a toast message is displayed to the user. [Confirm email2](wireframes/confirm_email.png) | PASS
+Ensure when a user successfully signs in, a toast message is displayed telling them so. | When a user successfully signs in, a toast message is displayed telling them so. [Sign In success2](wireframes/signin_success.png) | PASS
+Ensure the user's username is displayed when they go to their profile page. | The user's username is displayed when they go to their profile page. [User profile](wireframes/user_profile.png) | PASS
 
 ---
 

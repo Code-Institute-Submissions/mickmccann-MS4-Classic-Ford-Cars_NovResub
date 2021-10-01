@@ -3,26 +3,27 @@
 
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container mt-0">
-        <div class="row">
-            <div class="col">
-                <hr>
-                    <h2 class="logo-font text-dark mb-0">Your Profile</h2>
-                <hr>
-            </div>
+<div class="overlay"></div>
+<div class="container mt-0">
+    <hr>
+    <h2 class="logo-font text-dark mb-4">Your Profile</h2>
+    <hr>
+    <div class="row">
+        <div class="col card shadow p-3">
+            {{ profile|title }}
         </div>
     </div>
+</div>
 {% endblock %}
