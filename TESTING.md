@@ -47,6 +47,9 @@ When a user confirms their email address ensure a toast message is displayed to 
 Ensure when a user successfully signs in, a toast message is displayed telling them so. | When a user successfully signs in, a toast message is displayed telling them so. [Sign In success2](wireframes/signin_success.png) | PASS
 Ensure the user's username is displayed when they go to their profile page. | The user's username is displayed when they go to their profile page. [User profile](wireframes/user_profile.png) | PASS
 Ensure when a user updates their profile delivery info, a toast message is displayed telling that the change has been successfully made. | When a user updates their profile delivery info, a toast message is displayed telling that the change has been successfully made. [Update profile](wireframes/updated_profile.png) | PASS
+Ensure when a user ticks the save order button, their order is saved to their profile. | When a user ticks the save order button, their order is saved to their profile. This tests also shows that all order details have been populated to the order history form. [Order history](wireframes/order_history.png) | PASS
+Ensure when a user clicks on the order number in the order history, they are prompted with an alert that it is a past order. | When a user clicks on the order number in the order history, they are prompted with an alert that it is a past order. [Order number](wireframes/order_number.png) | PASS
+
 
 ---
 
