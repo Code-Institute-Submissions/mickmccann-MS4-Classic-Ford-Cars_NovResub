@@ -46,6 +46,7 @@ Ensure when a user signs up a confirmation email is sent to the user with a conf
 When a user confirms their email address ensure a toast message is displayed to the user. | When a user confirms their email address a toast message is displayed to the user. [Confirm email2](wireframes/confirm_email.png) | PASS
 Ensure when a user successfully signs in, a toast message is displayed telling them so. | When a user successfully signs in, a toast message is displayed telling them so. [Sign In success2](wireframes/signin_success.png) | PASS
 Ensure the user's username is displayed when they go to their profile page. | The user's username is displayed when they go to their profile page. [User profile](wireframes/user_profile.png) | PASS
+Ensure when a user updates their profile delivery info, a toast message is displayed telling that the change has been successfully made. | When a user updates their profile delivery info, a toast message is displayed telling that the change has been successfully made. [Update profile](wireframes/updated_profile.png) | PASS
 
 ---
 
