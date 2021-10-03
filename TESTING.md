@@ -270,6 +270,20 @@ Ensure the Sign In page displays as intended across devices and laptops.
 
 ![Sign In page mobile screens](wireframes/signin_mobile.png)
 
+
+## Profile Page
+
+Ensure the Profile page displays as intended across devices and laptops.
+
+- The Profile page displays as intended on laptop and tablet screens.
+
+![Profile page larger screens](wireframes/profile_lg.png)
+
+- The Profile page displays as intended on mobile screens.
+
+![Profile page mobile screens](wireframes/profile_mb.png)
+
+
 ---
 
 # BUGS AND ISSUES
