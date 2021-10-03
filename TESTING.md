@@ -141,6 +141,7 @@ Ensure webhook handler prints out the intent coming from Stripe once the user ma
 Ensure that in the event of an impatient user, the webhook captures the intent and stores the order in the database. | In the event of an impatient user, the webhook captures the intent and stores the order in the database. | PASS
 Ensure that in the event a user accidentally closes the broswer window, their order remains in the cart when they come back to the site. | In the event a user accidentally closes the broswer window, their order remains in the cart when they come back to the site. | PASS
 If a user is filling out the order form and they hit submit but the close the browser, ensure the order does not go through. | If a user is filling out the order form and they hit submit but the close the browser, the order does not go through. | PASS
+Ensure webhook handler is updated to handle the profiles. | Webhook handler is updated to handle the profiles. | PASS
 
 ---
 
