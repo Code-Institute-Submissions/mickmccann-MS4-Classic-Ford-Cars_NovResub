@@ -125,6 +125,7 @@ Ensure when a user successfully purchases a car, their cart is emptied afterward
 Ensure that when a purchase is made, an order summary is rendered on the checkout_success page. | When a purchase is made, an order summary is rendered on the checkout_success page. [Order summary](wireframes/order_summary.png) | PASS 
 Ensure that if a user doesn't fill out street_address2, county or postcode in the order form that these aren't rendered in the order sumnmary. | If a user doesn't fill out street_address2, county or postcode in the order form that these aren't rendered in the order sumnmary. [Order summary](wireframes/order_summary.png) | PASS
 Testing Stripe authentication. | By using the test credit card number ```4000 0027 6000 3184``` Stripe intiates a modal asking the customer to authenticate. If the credit card number ```4242 4242 4242 4242``` is used, no authentication is required from the user [Stripe authentication](wireframes/stripe_extra_secruity.png) | PASS
+Ensure the user receives a confirmation email once their order is complete. | The user receives a confirmation email once their order is complete. | PASS
 
 
 ---
