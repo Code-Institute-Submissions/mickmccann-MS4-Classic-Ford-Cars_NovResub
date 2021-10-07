@@ -49,6 +49,10 @@ Ensure the user's username is displayed when they go to their profile page. | Th
 Ensure when a user updates their profile delivery info, a toast message is displayed telling that the change has been successfully made. | When a user updates their profile delivery info, a toast message is displayed telling that the change has been successfully made. [Update profile](wireframes/updated_profile.png) | PASS
 Ensure when a user ticks the save order button, their order is saved to their profile. | When a user ticks the save order button, their order is saved to their profile. This tests also shows that all order details have been populated to the order history form. [Order history](wireframes/order_history.png) | PASS
 Ensure when a user clicks on the order number in the order history, they are prompted with an alert that it is a past order. | When a user clicks on the order number in the order history, they are prompted with an alert that it is a past order. [Order number](wireframes/order_number.png) | PASS
+Ensure the appropriate error message is displayed if the add products form is filled out incorrectly. | The appropriate error message is displayed if the add products form is filled out incorrectly. [Add products error](wireframes/addproducts_error.png) | PASS
+Ensure the appropriate success message is displayed if the add products form is filled out correctly. | The appropriate success message is displayed if the add products form is filled out correctly. [Add products success](wireframes/addproducts_success.png) | PASS
+Ensure that products are successfully added. If product has no image, the appropiat noimage.png is displayed. | Products are successfully added. If product has no image, the appropiat noimage.png is displayed. [Add products](wireframes/addproducts.png) | PASS
+Ensure new product images are uploaded successfully. | New product images are uploaded successfully. [Product image](wireframes/product_image.png) - [Product image2](wireframes/product_image2.png) | PASS
 
 
 ---
