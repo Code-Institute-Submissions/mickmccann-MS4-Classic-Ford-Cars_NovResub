@@ -53,6 +53,7 @@ Ensure the appropriate error message is displayed if the add products form is fi
 Ensure the appropriate success message is displayed if the add products form is filled out correctly. | The appropriate success message is displayed if the add products form is filled out correctly. [Add products success](wireframes/addproducts_success.png) | PASS
 Ensure that products are successfully added. If product has no image, the appropiat noimage.png is displayed. | Products are successfully added. If product has no image, the appropiat noimage.png is displayed. [Add products](wireframes/addproducts.png) | PASS
 Ensure new product images are uploaded successfully. | New product images are uploaded successfully. [Product image](wireframes/product_image.png) - [Product image2](wireframes/product_image2.png) | PASS
+Ensure the appropiate message is displayed when a product has been updated successfully. | The appropiate message is displayed when a product has been updated successfully. When product has been updated, the admin is redirected to the specific product detail page. [Edit success](wireframes/edit_success.png) | PASS
 
 
 ---
