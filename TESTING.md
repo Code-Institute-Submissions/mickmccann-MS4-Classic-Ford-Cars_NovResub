@@ -57,6 +57,7 @@ Ensure the appropiate message is displayed when a product has been updated succe
 Ensure when a new product is added they are redirected to that specific product detail page with the correct id displayed in the browser. | When a new product is added they are redirected to that specific product detail page with the correct id displayed in the browser. [Add products2](wireframes/addproduct_id.png) | PASS
 Ensure the appropiate messages is displayed when a product has been deleted. | The appropiate messages is displayed when a product has been deleted. [Delete product](wireframes/delete_product.png)
 Ensure when logged in as the Superuser, Edit and Delete buttons are displayed on the products page and the products detail page. | When logged in as the Superuser, Edit and Delete buttons are displayed on the products page and the products detail page. [Edit delete1](wireframes/edit_delete1.png) - [Edit delete2](wireframes/edit_delete2.png) | PASS
+Ensure defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. | Defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. | PASS
 
 
 ---
