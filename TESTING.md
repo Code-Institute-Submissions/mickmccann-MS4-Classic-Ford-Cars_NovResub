@@ -57,8 +57,9 @@ Ensure the appropiate message is displayed when a product has been updated succe
 Ensure when a new product is added they are redirected to that specific product detail page with the correct id displayed in the browser. | When a new product is added they are redirected to that specific product detail page with the correct id displayed in the browser. [Add products2](wireframes/addproduct_id.png) | PASS
 Ensure the appropiate messages is displayed when a product has been deleted. | The appropiate messages is displayed when a product has been deleted. [Delete product](wireframes/delete_product.png)
 Ensure when logged in as the Superuser, Edit and Delete buttons are displayed on the products page and the products detail page. | When logged in as the Superuser, Edit and Delete buttons are displayed on the products page and the products detail page. [Edit delete1](wireframes/edit_delete1.png) - [Edit delete2](wireframes/edit_delete2.png) | PASS
-Ensure defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. | Defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. | PASS
-
+Ensure defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. | Defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. [Defensive programming](wireframes/defensive_prog.png) | PASS
+Ensure when the site owner is uploading a new car image, they are provided with the correct message as to what the image will be. | When the site owner is uploading a new car image, they are provided with the correct message as to what the image will be. [Image select](wireframes/select_image.png) | PASS
+Ensure when the site owner is editing a product, when clicking on the remove checkbox and then update car button, the car image is removed. | When the site owner is editing a product, when clicking on the remove checkbox and then update car button, the car image is removed. | PASS
 
 ---
 
