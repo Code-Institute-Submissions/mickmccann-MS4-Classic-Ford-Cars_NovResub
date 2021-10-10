@@ -300,6 +300,14 @@ Ensure the Profile page displays as intended across devices and laptops.
 
 # BUGS AND ISSUES
 
+
+## Exposing Sensitive Information
+
+When I was setting up my application in Heroku, I was having issues migrating. I shared these issues in Slack and it was then pointed that I had left my API Key exposed, Debug was set to True and I had also pushed my database to GitHub.
+
+To ammend these vulnerabilities, I set up GitPod variables for the SECRET_KEY and for Debug. Then in my settings.py I added SECRET_KEY = os.environ.get("SECRET_KEY") and DEBUG = os.environ.get("DEBUG") at the end of file. To secure my database, I added it to .gitignore
+
+
 ## Unsupported Operand
 
 Kept on getting unsupported operand type for *: 'NoneType' and 'decimal.Decimal'
