@@ -42,8 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
+    # 'allauth.account',
+    "classic_ford_cars.apps.ModifiedAccountConfig",
+    # 'allauth.socialaccount',
+    "classic_ford_cars.apps.ModifiedSocialAccountConfig",
     'home',
     'products',
     'cart',
@@ -120,10 +122,16 @@ WSGI_APPLICATION = 'classic_ford_cars.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'dfvstfmq4t2e0j',
+            'USER': 'zetkddgmyzhupb',
+            'PASSWORD': 'be006b25758c5e0fbe05d15cd088f6d16657cea549f1840eef761284c4796878',
+            'HOST': 'ec2-52-214-178-113.eu-west-1.compute.amazonaws.com',
+            'PORT': '5432',
+        }
     }
 else:
     DATABASES = {
@@ -132,6 +140,20 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+
+
+# Legacy implementation -- keep
+# if 'DATABASE_URL' in os.environ:
+#     DATABASES = {
+#         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
 
 
 # Password validation
