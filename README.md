@@ -135,7 +135,16 @@ Below are some basic wireframes designed for mobile, tablet and desktop created 
 
 ---
 
-# DATABASE AND MODELS 
+# DATABASE MODELS 
+
+## Category Model
+
+KEY            | TYPE FIELD              | RELATIONSHIP        | BLANK        | NULL      |
+-------------- | ----------------------- | ------------------- | ------------ | --------- |
+name	       | CharField               | /                   | /            | /         |
+friendly_name  | CharField               | /                   | True         |	True      |
+sku	           | CharField               | /                   | True	      | True      |
+
 
 ## Products Model
 
@@ -151,7 +160,7 @@ image_url      | URLField                | /                   | True         | 
 image          | ImageField              | /                   | True         | True      | /            | /                  | /            |
 
 
-## Order Model
+## Order Model
 
 KEY              | TYPE FIELD              | RELATIONSHIP        | BLANK        | NULL      | MAX DIGITS   | DECIMAL PLACES     | MAX LENGTH   | DEFAULT  |
 ---------------- | ----------------------- | ------------------- | ------------ | --------- | ------------ | ------------------ | ------------ | ---------|
@@ -173,7 +182,7 @@ original_cart    | TextField               | /                   | False        
 stripe_pid       | CharField               | /                   | False        | False     | /            | /                  | 254          | ''       |
 
 
-## User Profile Model
+## User Profile Model
 
 KEY                     | TYPE FIELD              | RELATIONSHIP        | BLANK        | NULL      | MAX LENGTH   | 
 ----------------------- | ----------------------- | ------------------- | ------------ | --------- | ------------ | 
@@ -185,6 +194,82 @@ default_town_or_city    | CharField               | /                   | True  
 default_county          | CharField               | /                   | True         | True      | 80           | 
 default_postcode        | CharField               | /                   | True         | True      | 20           |
 default_country         | CountryField            | /                   | True         | True      | /            |
+
+
+## Products In Json Format
+
+```
+[
+    {
+        "pk": 1, "model": "products.product", "fields":
+        {
+            "sku":
+            "name":
+            "description":
+            "price":
+            "category":
+            "rating":
+            "image": ""
+        }
+    }
+]
+
+```
+
+## Categories In Json Format
+
+```
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "capri_mkI_1600_gt",
+            "friendly_name": "Capri MkI 1600 GT"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "mustang_mach_1",
+            "friendly_name": "Mustang Mach 1"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "capri_2.0_mark_1",
+            "friendly_name": "Capri 2.0 Mark 1"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "capri_rally_cars",
+            "friendly_name": "Capri Rally Cars"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "racing_mustangs",
+            "friendly_name": "Racing Mustangs"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    }
+]
+
+```
 
 
 ---
