@@ -139,17 +139,52 @@ Below are some basic wireframes designed for mobile, tablet and desktop created 
 
 ## Products Model
 
-KEY            |                           | 
---------------- | -------------------------------- | ---------------
-category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-sku = models.CharField(max_length=254, null=True, blank=True)
-name = models.CharField(max_length=254)
-description = models.TextField()
-price = models.DecimalField(max_digits=10, decimal_places=2)
-rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-image_url = models.URLField(max_length=1024, null=True, blank=True)
-image = models.ImageField(null=True, blank=True)
+KEY            | TYPE FIELD              | RELATIONSHIP        | BLANK        | NULL      | MAX DIGITS   | DECIMAL PLACES     | MAX LENGTH   |
+-------------- | ----------------------- | ------------------- | ------------ | --------- | ------------ | ------------------ | ------------ |
+category       | ManyToMany              | Categories          | True         | True      | /            | /                  | /            |
+sku            | CharField               | /                   | True         | True      | /            | /                  | 254          |
+name           | CharField               | /                   | /            | /         | /            | /                  | 254          |
+description    | TextField               | /                   | /            | /         | /            | /                  | /            |
+price          | DecimalField            | /                   | /            | /         | 10           | 2                  | /            |
+rating         | DecimalField            | /                   | True         | True      | 6            | 2                  | /            |
+image_url      | URLField                | /                   | True         | True      | /            | /                  | 1024         |
+image          | ImageField              | /                   | True         | True      | /            | /                  | /            |
 
+
+## Order Model
+
+KEY              | TYPE FIELD              | RELATIONSHIP        | BLANK        | NULL      | MAX DIGITS   | DECIMAL PLACES     | MAX LENGTH   | DEFAULT  |
+---------------- | ----------------------- | ------------------- | ------------ | --------- | ------------ | ------------------ | ------------ | ---------|
+order_number     | CharField               | Order               | /            | False     | /            | /                  | 32           | /        |
+user_profile     | ForeignKey              | /                   | True         | True      | /            | /                  | /            | /        |
+full_name        | CharField               | /                   | False        | False     | /            | /                  | 50           | /        |
+email            | EmailField              | /                   | False        | False     | /            | /                  | 254          | /        |
+phone_number     | CharField               | /                   | False        | False     | /            | /                  | 20           | /        |
+country          | CountryField            | /                   | False        | False     | /            | /                  | /            | /        |
+postcode         | CharField               | /                   | False        | False     | /            | /                  | 20           | /        |
+town_or_city     | CharField               | /                   | False        | False     | /            | /                  | 40           | /        |
+street_address1  | CharField               | /                   | False        | False     | /            | /                  | 80           | /        |
+street_address2  | CharField               | /                   | True         | True      | /            | /                  | 80           | /        |
+county           | CharField               | /                   | True         | True      | /            | /                  | 80           | /        |
+date             | DateTimeField           | /                   | /            | /         | /            | /                  | /            | /        |
+order_total      | DecimalField            | /                   | /            | False     | 10           | 2                  | /            | 0        |
+grand_total      | DecimalField            | /                   | /            | False     | /            | /                  | /            | 0        |
+original_cart    | TextField               | /                   | False        | False     | /            | /                  | /            | ''       |
+stripe_pid       | CharField               | /                   | False        | False     | /            | /                  | 254          | ''       |
+
+
+## User Profile Model
+
+KEY                     | TYPE FIELD              | RELATIONSHIP        | BLANK        | NULL      | MAX LENGTH   | 
+----------------------- | ----------------------- | ------------------- | ------------ | --------- | ------------ | 
+user                    | OneToOneField           | UserProfile         | /            | /         | /            |  
+default_phone_number    | CharField               | /                   | True         | True      | 20           |
+default_street_address1 | CharField               | /                   | True         | True      | 80           | 
+default_street_address2 | CharField               | /                   | True         | True      | 80           | 
+default_town_or_city    | CharField               | /                   | True         | True      | 40           |
+default_county          | CharField               | /                   | True         | True      | 80           | 
+default_postcode        | CharField               | /                   | True         | True      | 20           |
+default_country         | CountryField            | /                   | True         | True      | /            |
 
 
 ---
