@@ -174,6 +174,13 @@ TEST            | OUTCOME                          | PASS / FAIL
 
 # CHROME LIGHTHOUSE REPORT
 
+## Lighthouse Test Report
+![Lighthouse report](lighthouse_test.png)
+
+
+## Incognito Lighthouse Test Report
+![Lighthouse report](incog_lighthouse_test.png)
+
 ---
 
 # RESPONSIVENESS TESTING
