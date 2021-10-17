@@ -223,8 +223,8 @@ default_country         | CountryField            | /                   | True  
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "capri_mkI_1600_gt",
-            "friendly_name": "Capri MkI 1600 GT"
+            "name": "capri_mark_1",
+            "friendly_name": "Capri Mark 1"
         }
     },
     {
@@ -239,8 +239,8 @@ default_country         | CountryField            | /                   | True  
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "capri_2.0_mark_1",
-            "friendly_name": "Capri 2.0 Mark 1"
+            "name": "capri_mark_2",
+            "friendly_name": "Capri Mark 2"
         }
     },
     {
