@@ -154,6 +154,13 @@ Ensure that in the event a user accidentally closes the broswer window, their or
 If a user is filling out the order form and they hit submit but the close the browser, ensure the order does not go through. | If a user is filling out the order form and they hit submit but the close the browser, the order does not go through. | PASS
 Ensure webhook handler is updated to handle the profiles. | Webhook handler is updated to handle the profiles. | PASS
 
+
+## Stripe Webhook Testing On The Live Site
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Ensure Stripe webhooks are being sent successfully on the live site. | Stripe webhooks are being sent successfully on the live site. [Webhook Test6](wireframes/stripe_wh_test.png) | PASS
+
 ---
 
 # DETAILED TESTING
