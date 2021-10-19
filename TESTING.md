@@ -155,11 +155,22 @@ If a user is filling out the order form and they hit submit but the close the br
 Ensure webhook handler is updated to handle the profiles. | Webhook handler is updated to handle the profiles. | PASS
 
 
-## Stripe Webhook Testing On The Live Site
+---
+
+# Stripe Webhook Testing On The Live Site
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Ensure Stripe webhooks are being sent successfully on the live site. | Stripe webhooks are being sent successfully on the live site. [Webhook Test6](wireframes/stripe_wh_test.png) | PASS
+
+---
+
+# Sending Real Emails Tests
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Ensure customer receives a real email to confirm their email address. | Customer receives a real email to confirm their email address. [Email test1](wireframes/real_email_test.png) | PASS
+Ensure customer receives a real email with their complete order information. | Customer receives a real email with their complete order information. Email contains an unique order number, order date and time, order total, delivery address and phone number. Order number is also added to the subject line [Email test2](wireframes/real_email_test.png) | PASS
 
 ---
 
