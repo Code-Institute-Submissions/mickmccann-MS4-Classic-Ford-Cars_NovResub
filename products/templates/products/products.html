@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
+<div class="container">
     <div class="row">
         <div class="col"></div>
     </div>
@@ -70,7 +70,7 @@
             <!-- For loop to iterate through the products -->
             <div class="row">
                 {% for product in products %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3" style="margin-left: auto; margin-right: auto; margin-bottom: 2em;">
                     <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
