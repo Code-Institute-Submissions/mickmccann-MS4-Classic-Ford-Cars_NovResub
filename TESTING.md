@@ -174,12 +174,50 @@ Ensure customer receives a real email with their complete order information. | C
 
 ---
 
-# DETAILED TESTING
+# DETAILED WALKTHROUGH TEST
 
+- User navigates to: https://classic-ford-cars.herokuapp.com/
 
-TEST            | OUTCOME                          | PASS / FAIL  
---------------- | -------------------------------- | ---------------
+- User clicks on DISCOVER NOW button or they use the main links to look up cars.
 
+    - DISCOVER NOW button shows all the various different car products.
+
+- User selects a car to purchase and is taken to the product detail page.
+    - Here they can either KEEP BROWSING or ADD CAR TO CART.
+
+    - Clicking on the KEEP BROWSING button takes the user to the all products page.
+    - Clicking on ADD CAR TO CART displays an instant notification of the car product and cost.
+        - Car cost is also displayed underneath the truck icon.
+
+- User then clicks on GO TO SECURE CHECKOUT and is taken to the cart page with all of the product info contained. 
+    - Within the product info, user sees an image.
+
+    - The name of the model.
+    - The cost.
+    - Quantity.
+    - And subtotal.
+        - If they want, user can remove the item from the cart.
+    - The user has two options:
+        - To CONTINUE BROWSING (item remains in the cart).
+
+        - Or they can SECURE CHECKOUT, which takes them to the checkout page.
+
+- With the user now on the checkout page, the user is required to fill out a form.
+    - Fields marked with an (*) are required.
+        - If user fails to fill out a required field, the user is altered of the error.
+    
+    - Users can either create an account or login to save the information if they wish.
+
+    - User then enters credit card details.
+        - If user enters incorrect card details, the user is instantly altered of the error.
+
+    - User can the either adjust their cart or complete the order.
+
+        - Clicking on the ADJUST CART takes the user to the cart page.
+
+        - Clicking on COMPLETE YOUR ORDER makes the purchase, providing there are no errors in the form.
+
+        - User then receives an confirmation email with a complete order summary.
 
 ---
 
@@ -324,6 +362,18 @@ Ensure the Profile page displays as intended across devices and laptops.
 ---
 
 # BUGS AND ISSUES
+
+## Issue With The Layout Of The Cart On Mobile 
+
+Although the functions on the cart all worked on mobile devices, the layout wasn't exactly user friendly. 
+
+![bad layout cart](wireframes/bad_cart.png)
+
+
+So in order to combat this issue, I refactored the code and used a grid. It now looks less cluttered and much more user friendly.
+
+![good layout cart](wireframes/good_cart.png)
+
 
 
 ## Exposing Sensitive Information
