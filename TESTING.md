@@ -1,9 +1,3 @@
-# TESTING USER STORIES
-
-Testing user stories goes here
-
----
-
 # DJANGO TESTING
 
 ## Django Unit and Template Testing
@@ -55,7 +49,7 @@ Ensure that products are successfully added. If product has no image, the approp
 Ensure new product images are uploaded successfully. | New product images are uploaded successfully. [Product image](wireframes/product_image.png) - [Product image2](wireframes/product_image2.png) | PASS
 Ensure the appropiate message is displayed when a product has been updated successfully. | The appropiate message is displayed when a product has been updated successfully. When product has been updated, the admin is redirected to the specific product detail page. [Edit success](wireframes/edit_success.png) | PASS
 Ensure when a new product is added they are redirected to that specific product detail page with the correct id displayed in the browser. | When a new product is added they are redirected to that specific product detail page with the correct id displayed in the browser. [Add products2](wireframes/addproduct_id.png) | PASS
-Ensure the appropiate messages is displayed when a product has been deleted. | The appropiate messages is displayed when a product has been deleted. [Delete product](wireframes/delete_product.png)
+Ensure the appropiate messages is displayed when a product has been deleted. | The appropiate messages is displayed when a product has been deleted. [Delete product](wireframes/delete_product.png) | PASS
 Ensure when logged in as the Superuser, Edit and Delete buttons are displayed on the products page and the products detail page. | When logged in as the Superuser, Edit and Delete buttons are displayed on the products page and the products detail page. [Edit delete1](wireframes/edit_delete1.png) - [Edit delete2](wireframes/edit_delete2.png) | PASS
 Ensure defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. | Defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. [Defensive programming](wireframes/defensive_prog.png) | PASS
 Ensure when the site owner is uploading a new car image, they are provided with the correct message as to what the image will be. | When the site owner is uploading a new car image, they are provided with the correct message as to what the image will be. [Image select](wireframes/select_image.png) | PASS
@@ -176,6 +170,8 @@ Ensure customer receives a real email with their complete order information. | C
 
 # DETAILED WALKTHROUGH TEST
 
+## Navigating and Purchasing
+
 - User navigates to: https://classic-ford-cars.herokuapp.com/
 
 - User clicks on DISCOVER NOW button or they use the main links to look up cars.
@@ -218,6 +214,33 @@ Ensure customer receives a real email with their complete order information. | C
         - Clicking on COMPLETE YOUR ORDER makes the purchase, providing there are no errors in the form.
 
         - User then receives an confirmation email with a complete order summary.
+
+## Register and Login
+
+- Clicking on the MY ACCOUNT button reveals to options:
+
+    - Register and Login
+
+        - Clicking on the Register button takes the user to the sign up page.
+
+            - Users can't register an account unless all fields ae filled out.
+
+            - When a form is submitted successfully, user receives an email to confirm their email.
+
+            - Clicking on the link in the email opens up the website in a new broswer tab with a confirm button.
+
+            - The user is now sucessfully registered and can log in and out whenever.
+
+The benefits for creating an account is that users have the ability to save their order details and view their past orders.
+
+
+## Project Management
+
+- Logging in as the website's owner gives the owner extra permissions.
+
+- Clicking on the Poject Management button takes the user to a form. 
+- This form gives the admin the ability to upload more cars into the various categories.
+- When the admin navigates to the products page, they have the ability to Edit or Delete a car. 
 
 ---
 
