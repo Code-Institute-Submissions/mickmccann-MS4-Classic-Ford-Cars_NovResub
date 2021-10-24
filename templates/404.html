@@ -45,7 +45,7 @@
         <!-- Service Banner -->
         <div id="service-banner" class="row text-center">
             <div class="col bg-black">
-                <h4 class="text-white my-1">Free Mechanical Services For 1 Year On Orders Over €23,000!</h4>
+                <h4 class="text-white my-1">Free Mechanical Services For 1 Year On Orders Over €{{ free_mechanical_services_threshold }}!</h4>
             </div>
         </div>
 
@@ -146,8 +146,8 @@
     {% block page_header %}
     {% endblock %}
     
-        {% block content %}
-        {% endblock %}
+    <p>Looks like this isn't the page you were looking for!</p>
+    <a class="" href="{% url 'home' %}">Go back to the home page</a>
     
     {% block postloadjs %}
         <script type="text/javascript">

@@ -1,7 +1,8 @@
 # CLASSIC FORD CARS
 
-Mock up image goes here
-With live link
+![Mockup image](wireframes/mockup_image.png)
+
+https://classic-ford-cars.herokuapp.com/
 
 
 ## About the Project

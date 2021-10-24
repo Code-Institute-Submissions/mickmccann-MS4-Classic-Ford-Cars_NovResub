@@ -244,6 +244,18 @@ The benefits for creating an account is that users have the ability to save thei
 
 ---
 
+# FLAKE8 ERRORS
+
+Please note that these errors are mostly related to lines being too long, being completely new to Python and Django, I was genuinely fearful of going in and trying to fix these as I was scared about breaking something within the code. Time wasn't on my side ether so apologies for not addressing all of these!
+
+---
+
+# THE FREE THRESHOLD
+
+I wanted to have something whereby if the user bought a car over €23,000 this would entitled the car buyer to a year free of mechanical services, I was unable to implement this in the way I wanted. So I've chosen to leave this feature out for now. 
+
+---
+
 # CHROME LIGHTHOUSE REPORT
 
 ## Lighthouse Test Report
@@ -386,6 +398,13 @@ Ensure the Profile page displays as intended across devices and laptops.
 
 # BUGS AND ISSUES
 
+## Dublicate Orders
+
+When a user purchases a car, the order goes through fine, but when they go to their profile there's a dublicate order. User is only charged for one car.
+
+![dublicate order](wireframes/dublicate_order.png)
+
+
 ## Issue With The Layout Of The Cart On Mobile 
 
 Although the functions on the cart all worked on mobile devices, the layout wasn't exactly user friendly. 
@@ -396,7 +415,6 @@ Although the functions on the cart all worked on mobile devices, the layout wasn
 So in order to combat this issue, I refactored the code and used a grid. It now looks less cluttered and much more user friendly.
 
 ![good layout cart](wireframes/good_cart.png)
-
 
 
 ## Exposing Sensitive Information
