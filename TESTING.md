@@ -407,6 +407,14 @@ The website has been thoroughly tested on:
 
 ---
 
+# VALIDATIONS
+
+- CSS Validator - PASSED
+
+- HTML Validator - PASSED
+
+---
+
 # BUGS AND ISSUES
 
 ## Dublicate Orders
