@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+<div class="overlay"></div>
 <div class="container-fluid">
-<div class="row">
-<div class="col text-center mt-3">
-   <h2 class="title-text page-title">404 error</h2>
-   <hr class="w-50 mb-1 title-hr">
-</div>
-<p>Looks like this isn't the page you were looking for!</p>
-<a class="" href="{% url 'home' %}">Go back to the home page</a>
-{% endblock %}
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font text-dark">404 error</h2>
+            <hr class="w-50 mb-1">
+        </div>
+        <p>Looks like this isn't the page you were looking for!</p>
+        <div class="container">
+            <h4>
+                <a href="{% url 'home' %}" class="discover-cars-btn btn btn-lg rounded-8 text-uppercase py-3">
+                    Home!
+                </a>
+            </h4>
+        </div>
+        {% endblock %}
