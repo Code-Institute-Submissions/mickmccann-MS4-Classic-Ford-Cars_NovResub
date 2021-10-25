@@ -1,19 +1,201 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block page_header %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
 {% block content %}
+<!-- Displays Cars -->
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font text-dark">404 error</h2>
+            <h2 class="logo-font mb-1 text-dark">Car Products</h2>
+            <h3 class="text-danger">Whoops! The page you requested does not exist. Could we maybe interest you in some of our cars?!</h3>
+            <!-- Displays Badges -->
+            {% for c in current_categories %}
+            <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
+                <span
+                    class="p-2 mt-2 badge badge-white text-dark rounded-8 border border bg-white shadow">{{ c.friendly_name }}</span>
+            </a>
+            {% endfor %}
             <hr class="w-50 mb-1">
         </div>
-        <p class="text-dark">Looks like this isn't the page you were looking for!</p>
-        <div class="container">
-            <h4>
-                <a href="{% url 'home' %}" class="discover-cars-btn btn btn-lg rounded-8 text-uppercase py-3">
-                    Home!
-                </a>
-            </h4>
+    </div>
+    <!-- Product Container -->
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <!-- Dropdown Select -->
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm shadow rounded-8 border border-{% if current_sorting != 'None_None' %}info{% else %}{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort cars
+                                by...</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                                (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                                (high to low)</option>
+                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
+                                Rating (low to high)</option>
+                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
+                                Rating (high to low)</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                                (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                                (Z-A)</option>
+                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                                Category (A-Z)</option>
+                            <option value="category_desc"
+                                {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        <span class="text-dark text-decoration-underline"><a href="{% url 'products' %}">Products
+                                Home</a> | </span>
+                        {% endif %}
+                        {{ products|length }} Products{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
+                </div>
+            </div>
+            <!-- For loop to iterate through the products -->
+            <div class="row">
+                {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3" style="margin-left: auto; margin-right: auto; margin-bottom: 2em;">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+                        {% if product.image %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <p class="mb-0 logo-font text-dark">{{ product.name }}</p>
+                        </div>
+                        {% if request.user.is_superuser %}
+                        <div class="mb-2 ml-3">
+                            <a href="{% url 'edit_product' product.id %}" class="text-black text-uppercase">
+                                Edit
+                                <i class="far fa-edit"></i>
+                            </a> or
+                            <a href="{% url 'delete_product' product.id %}"
+                                class="text-danger text-uppercase">
+                                Delete
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                        {% endif %}
+                        <!-- Card Footer -->
+                        <div class="card shadow p-3 bg-light border-4 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold text-danger">
+                                        €{{ product.price }}</p>
+                                    {% if product.category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <i class="fas fa-car mr-1"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
+                                    {% if product.rating %}
+                                    <small class="text-muted"><i
+                                            class="fas fa-star mr-1 text-warning"></i>{{ product.rating }} / 5</small>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deals with HR rule being displayed correctly on all devices -->
+                {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
         </div>
-        {% endblock %}
+    </div>
+</div>
+<!-- Back-to-top button -->
+<button id="scrollToTopBtn">
+    <i class="fas fa-chevron-up text-black"></i>
+</button>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+
+<!-- Script for back-to-top button -->
+<!-- https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ -->
+<script type="text/javascript">
+    let scrollToTopBtn = document.getElementById("scrollToTopBtn")
+    let rootElement = document.documentElement
+
+    function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+</script>
+
+<!-- Script to make the Sort By dropdown select work -->
+<script type="text/javascript">
+    $('#sort-selector').change(function () {
+        let selector = $(this);
+        let currentUrl = new URL(window.location);
+
+        let selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            let sort = selectedVal.split("_")[0];
+            let direction = selectedVal.split("_")[1];
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("sort");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
+{% endblock %}
