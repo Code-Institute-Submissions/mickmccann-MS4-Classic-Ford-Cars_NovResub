@@ -393,6 +393,17 @@ Ensure the Profile page displays as intended across devices and laptops.
 
 ![Profile page mobile screens](wireframes/profile_mb.png)
 
+---
+
+# DIFFERENT DEVICES
+
+
+The website has been thoroughly tested on:
+
+- iPhone 4, 5SE, 6Plus, X, 11
+- iPad, Pro, Mini
+
+- Samsung Galaxy Note 3, Note II, Galaxy S5, Galaxy Fold
 
 ---
 
