@@ -4,15 +4,18 @@
 <html lang="en">
   <head>
 
+    <!-- Meta stuff -->
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
+    <!-- Extra Meta stuff -->
     {% block extrameta %}
     {% endblock %}
 
+    <!-- Loads BASE.css, Boootstrap and Google fonts -->
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -21,9 +24,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Parisienne&display=swap">
     {% endblock %}
 
+    <!-- Extra CSS -->
     {% block extra_css %}
     {% endblock %}
 
+
+    <!-- CDNs for jQuery, Fontawesome and Bootsrap -->
     {% block corejs %}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -34,6 +40,7 @@
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
+    <!-- Extra JS -->
     {% block extra_js %}
     {% endblock %}
 
@@ -84,7 +91,9 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-2" aria-labelledby="user-options">
+                            <!-- Deals if a user is authenticated and logged in -->
                             {% if request.user.is_authenticated %}
+                                <!-- Deals if a superuser is authenticated and logged in -->
                                 {% if request.user.is_superuser %}
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
@@ -99,10 +108,12 @@
             
                     <!-- Shopping Cart -->
                     <li class="list-inline-item">
+                        <!-- Displays the total beneath the truck icon. Truck icon is a clickable link, taking the user to the cart -->
                         <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shipping-fast fa-lg"></i></div>
                                 <p class="my-0">
+                                    <!-- If there's something in the cart, the cost will be displayed, otherwise it will be set a €zero -->
                                     {% if grand_total %}
                                         €{{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -115,6 +126,7 @@
                 </ul>
             </div>
         </div>
+        <!-- Collapses the navbar down to a button for mobile -->
         <div class="row bg-dark bg-gradient">
             <nav class="navbar navbar-expand-lg navbar-light bg-warning w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,6 +137,7 @@
             </nav>
         </div>
     </header>
+    <!-- Deals with Toats notifications messages -->
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}

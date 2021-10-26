@@ -49,10 +49,13 @@
                                 </a>
                             </div>
                             <div class="col-7">
+                                <!-- Displays the item's product name -->
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                <!-- Displays the item's quantity -->
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                             </div>
                             <div class="col-3 text-right">
+                                <!-- Displays the item's product price -->
                                 <p class="my-0 small text-muted">€{{ item.product.price }}</p>
                             </div>
                         </div>
@@ -60,6 +63,7 @@
                         <hr class="my-0">
                         <div class="row text-black text-right">
                             <div class="col-7 offset-2">
+                                <!-- Displays the item's order total -->
                                 <p class="my-0">Order Total:</p>
                             </div>
                             <div class="col-3">
@@ -68,10 +72,13 @@
                         </div>
                         </div>
                     <div class="py-3 col mb-4 col-lg-6 col-sm-12">
+                        <!-- A form for the user to fill out to complete their order -->
                         <p class="text-muted">Please fill out the form below to complete your order.</p>
                         <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                            <!-- A CSRF Token is a secret, unique and unpredictable value a server-side application generates in order to protect CSRF vulnerable resources. The tokens are generated and submitted by the server-side application in a subsequent HTTP request made by the client. Form won't be processed without this token -->
                             {% csrf_token %}
                             <fieldset class="rounded-4 px-3 mb-5">
+                                <!-- The below entry fields are generated using Django crispy forms -->
                                 <legend class="fieldset-label small text-dark px-2 w-auto">Details</legend>
                                     <div class="p-3 card shadow">
                                         {{  order_form.full_name | as_crispy_field }}
@@ -90,6 +97,7 @@
                                         {{  order_form.country | as_crispy_field }}
                                     </div>
                                 <div class="form-check form-check-inline float-right mr-0">
+                                    <!-- If the user is registered they have the option to save the dellivery info. Otherwise they are given links to login or create an account -->
                                     {% if user.is_authenticated %}
                                         <label for="id-save-info" class="form-check-label">Save this delivery info to your profile</label>
                                         <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info" checked>
@@ -143,6 +151,7 @@
         </div>
     </div>
     <div id="loading-overlay">
+        <!-- Loading spinning icon of a car is displayed while the payyment is being processed -->
         <h1 class="text-white logo-font loading-spinner">
             <span class="icon">
                 <i class="fas fa-7x fa-car fa-spin"></i>

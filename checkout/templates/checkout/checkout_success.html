@@ -13,6 +13,7 @@
     </div>
 {% endblock %}
 
+<!-- If the checkout is successful, the following info is displayed to the user -->
 {% block content %}
     <div class="overlay"></div>
     <div class="container mt-0">
@@ -21,6 +22,7 @@
                 <hr>
                 <h2 class="logo-font mb-4 text-dark">Your Car Is On Its Way!</h2>
                 <hr>
+                <!-- Displays the email add the user used to make the order -->
                 <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
             </div>
         </div>
@@ -33,7 +35,7 @@
                             <small class="text-muted">Order Info:</small>
                         </div>
                     </div>
-
+                    <!-- Displays a randomly generated unique order number -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Number</p>
@@ -42,7 +44,7 @@
                             <p class="mb-0">{{ order.order_number }}</p>
                         </div>
                     </div>
-
+                    <!-- Displays the order date and time of purchase -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Date</p>
@@ -57,7 +59,7 @@
                             <small class="text-muted">Order Details:</small>
                         </div>
                     </div>
-
+                    <!-- Displays the product name -->
                     {% for item in order.lineitems.all %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -66,17 +68,18 @@
                             </p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
+                        <!-- Displays the quantity and price -->
                             <p class="mb-0">{{ item.quantity }} @ €{{ item.product.price }}</p>
                         </div>
                     </div>
                     {% endfor %}
-
+                    <!-- Displays the user's address -->
                     <div class="row">
                         <div class="col">
                             <small class="text-muted">Delivering To:</small>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Full Name -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Full Name</p>
@@ -85,7 +88,7 @@
                             <p class="mb-0">{{ order.full_name }}</p>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Street Address1 -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Address 1</p>
@@ -94,7 +97,7 @@
                             <p class="mb-0">{{ order.street_address1 }}</p>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Street Address2 -->
                     {% if order.street_address2 %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -105,7 +108,7 @@
                         </div>
                     </div>
                     {% endif %}
-
+                    <!-- Displays the user's County -->
                     {% if order.county %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -116,7 +119,7 @@
                         </div>
                     </div>
                     {% endif %}
-
+                    <!-- Displays the user's Town or City -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Town or City</p>
@@ -125,7 +128,7 @@
                             <p class="mb-0">{{ order.town_or_city }}</p>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Postcode -->
                     {% if order.postcode %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -136,7 +139,7 @@
                         </div>
                     </div>
                     {% endif %}
-
+                    <!-- Displays the user's Country -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Country</p>
@@ -145,7 +148,7 @@
                             <p class="mb-0">{{ order.country }}</p>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Phone Number -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Phone Number</p>
@@ -154,13 +157,13 @@
                             <p class="mb-0">{{ order.phone_number }}</p>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Billing Info -->
                     <div class="row">
                         <div class="col">
                             <small class="text-muted">Billing Info:</small>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Order Total -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Total</p>
@@ -169,7 +172,7 @@
                             <p class="mb-0">€{{ order.order_total }}</p>
                         </div>
                     </div>
-
+                    <!-- Displays the user's Grand Total -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Grand Total</p>

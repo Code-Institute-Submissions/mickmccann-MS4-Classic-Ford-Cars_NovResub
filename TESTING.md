@@ -395,7 +395,7 @@ Ensure the Profile page displays as intended across devices and laptops.
 
 ---
 
-# DIFFERENT DEVICES
+# MOBILE DEVICES
 
 
 The website has been thoroughly tested on:
@@ -404,6 +404,24 @@ The website has been thoroughly tested on:
 - iPad, Pro, Mini
 
 - Samsung Galaxy Note 3, Note II, Galaxy S5, Galaxy Fold
+
+---
+
+# DIFFERENT BROWSERS
+
+The website has been thoroughly tested on the following browsers:
+
+- MacBook
+
+    - Safari
+    - Chrome
+    - Firefox
+
+- Windows HP
+
+    - Edge
+    - Chrome
+    - Firefox
 
 ---
 

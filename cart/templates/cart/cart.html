@@ -19,7 +19,7 @@
             <hr>
         </div>
     </div>
-        <!-- Displays items in the cart -->
+        <!-- Displays items currently in the cart -->
         <div class="row">
             <div class="col card shadow p-3 mb-4">
                 {% if cart_items %}
@@ -86,13 +86,6 @@
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     {% include "cart/cart-total.html" %}
-                                    <!--<h6>Delivery: €{{ free_mech_delta|floatformat:2 }}</h6>
-                                    <div class="mt-4 text-danger"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></div>
-                                    {% if free_mech_delta > 0 %}
-                                        <p class="mb-1 text-danger">
-                                            You could get free delivery by spending just <strong>${{ free_mech_services_delta }}</strong> more!
-                                        </p>
-                                    {% endif %}-->
                                 </td>
                             </tr>
                             <tr>
@@ -103,6 +96,7 @@
                         </table>
                     </div>
                 {% else %}
+                    <!-- Displays if there's nothing in the cart -->
                     <p class="lead mb-5">Your cart is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-8 btn-lg">
                         <span class="icon">
@@ -131,8 +125,6 @@ $('.remove-item').click(function(e) {
     $.post(url, data)
     .done(function() {
         location.reload();
-
-        console.log(itemId)
     });
 })
 
