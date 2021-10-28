@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG')
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['classic-ford-cars.herokuapp.com', 'localhost']
 
@@ -41,10 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
-    # 'allauth.account',
-    "classic_ford_cars.apps.ModifiedAccountConfig",
-    # 'allauth.socialaccount',
-    "classic_ford_cars.apps.ModifiedSocialAccountConfig",
+    'allauth.account',
+    'allauth.socialaccount',
+    # "classic_ford_cars.apps.ModifiedAccountConfig",
     # Website apps
     'home',
     'products',
@@ -237,7 +236,7 @@ DEBUG = os.environ.get("DEBUG")
 # Send emails
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'test@classicfordcars.com'
+    DEFAULT_FROM_EMAIL = 'classicfordcarss@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
