@@ -31,7 +31,7 @@ All design decisions have been made with the following goals in mind:
 
 - As a first time customer, I want to see what the website is selling.
 - As a first time customer, I would like to be able to navigate throughout the website easily.
-- As a first time customer, I would like to see an ABOUT section, displaying the appropiate information about the website.
+- As a first time customer, I would like to see an ABOUT section, displaying the appropriate information about the website.
 - As a first time customer, I would like to see a CONTACT page displaying all necessary contact information, such as a map, email address and phone numbers.
 
 ### **Searching For Cars**
@@ -44,7 +44,7 @@ All design decisions have been made with the following goals in mind:
 
 ![product amount](wireframes/product_amount.png)
 
-- As a first time customer, if I run a search for something, I expect to see my query ruturned, a count of the products, what I searched with a link back to the main products page.
+- As a first time customer, if I run a search for something, I expect to see my query returned, a count of the products, what I searched with a link back to the main products page.
 
 ![search result](wireframes/search_result.png)
 
@@ -111,7 +111,7 @@ All design decisions have been made with the following goals in mind:
 - As the website owner/admin, I would like to be able to add new cars easily.
 - As the website owner/admin, I would like to be able to delete cars easily.
 - As the website owner/admin, I would like to have access to the main admin page.
-- As the website owner/admin, I would users to be able to navigate throughoutt the site without them getting lost.
+- As the website owner/admin, I would like to be able to navigate throughout the site without them getting lost.
 
 ---
 
@@ -278,10 +278,10 @@ default_country         | CountryField            | /                   | True  
 # DESIGN
 
 ## Website Typography
-For the Classic Ford Cars logo, I chose Parisienne obtained from Google Fonts. I liked it because it's similiar to the original Ford logo.
+For the Classic Ford Cars logo, I chose Parisienne obtained from Google Fonts. I liked it because it's similar to the original Ford logo.
 
 ### About Parisienne
-Parisienne is a casual connecting script inspired by a 1960s Bra advertisement! It has a slight bounce and intentional irregularity to what might other wise appear to be a more formal script font. Classic, yet free spirited, it is a typestyle for a wide variety of use.
+Parisienne is a casual connecting script inspired by a 1960s Bra advertisement! It has a slight bounce and intentional irregularity to what might otherwise appear to be a more formal script font. Classic, yet free spirited, it is a typestyle for a wide variety of use.
 
 ![Logo text](wireframes/logo_text.png)
 
@@ -304,7 +304,7 @@ Below is a colour palette generated from [coolors](https://coolors.co/), which w
 
 - Footer and main body text will be the charcoal black #343434
 
-The remainding colours will be used for buttons and navigational links.
+The remaining colours will be used for buttons and navigational links.
 
 ![Colour theme](wireframes/colour_theme.png)
 
@@ -312,7 +312,7 @@ The remainding colours will be used for buttons and navigational links.
 
 All images of the Ford cars have been sourced from [Dreamstime](https://www.dreamstime.com).
 
-One large hero image will cover half of the homepage. The main navbar will have a transparency background as to not take away from the main inmagery.
+One large hero image will cover half of the homepage. The main navbar will have a transparency background as to not take away from the main imagery.
 
 In order to make it look like a genuine car dealers, I think it would look good if below the hero image, I had images of "employees". This feature came as an after thought prior to doing my wireframes.
 
@@ -325,19 +325,19 @@ With the card being white, this feature looks great against the off-white colour
 
 ## Category Badges
 
-In order to keep the design of the badges inline with the cards, the same styling has been applied. This is good practice for keeping things consistent with the overall look and feel of the site. The badges gives the user instant feedback of how many categories a car appears in. These badges are also active links that take the user to the approiate page when clicked.
+In order to keep the design of the badges inline with the cards, the same styling has been applied. This is good practice for keeping things consistent with the overall look and feel of the site. The badges, gives the user instant feedback of how many categories a car appears in. These badges are also active links that take the user to the appropriate page when clicked.
 
 ![badges](wireframes/badges.png)
 
-Again, from the user experience's point of view, it's better that the badges have a hover affect on them. this makes it more appealing, and it also informs the user that it is a clickable link.
+Again, from the user experience's point of view, it's better that the badges have a hover effect on them. This makes it more appealing, and it also informs the user that it is a clickable link.
 
 ![badges hover](wireframes/badges_hover.png)
 
 ## Back To Top
 
-It's good UX design to have a Back-To-Top button when dealing with many products. At the time of implementing this feature, I have only 7 cars added so it probably doesn't seem like a worthwhile addition, but I will add more cars at the end! And keeping the design consistant, I've kept the styles the same as the badges. With the hover effect, though, I was unable to change the font awasome icon colour with the hover effect.
+It's good UX design to have a Back-To-Top button when dealing with many products. At the time of implementing this feature, I have only 7 cars added so it probably doesn't seem like a worthwhile addition, but I will add more cars at the end! And keeping the design consistent, I've kept the styles the same as the badges. With the hover effect, though, I was unable to change the Font Awesome icon colour with the hover effect.
 
-Rather than having a Back-To-Top button that just snaps back to the top, I opted to have one with a nice smooth scrolling. I chose this affect because if you have scolled down throughout say maybe 100 different products, your eyes get stuck into a bit of a trance. Having a Back-To-Top button that just snaps up up can leave the user a bit lost as they are jolted out of their trance. A smooth scrolling, guides the user's eye upward, which makes for a better experience for the user, particulary the first time visitor.
+Rather than having a Back-To-Top button that just snaps back to the top, I opted to have one with a nice smooth scrolling. I chose this affect, because if you have scrolled down throughout say maybe 100 different products, your eyes get stuck into a bit of a trance. Having a Back-To-Top button that just snaps up, can leave the user a bit lost as they are jolted out of their gaze. A smooth scrolling, guides the user's eye upward, which makes for a better experience for the user, particularly the first time visitor.
 
 ![back to top](wireframes/back_to_top.png)
 
@@ -352,7 +352,7 @@ Toasts are great for the user's UX as they can casually browse an e-commerce web
 
 ## Checkout Page
 
-The form on the checkout page keeps the consistant design used throughout the website, maintaining the subtle use of Bootstrap cards and shadows.
+The form on the checkout page keeps the consistent design used throughout the website, maintaining the subtle use of Bootstrap cards and shadows.
 This form comes with the option to save the order to the user's profile.
 
 ![checkout form](wireframes/checkout_form.png)
@@ -371,14 +371,14 @@ As a nice subtle effect for the UX in mind, when a user is filling out a field o
 
 ## Payment Spinner
 
-Sometimes when you make a purchase on website, you are left waiting for while to see if your payment is being accepted. When the user is left staring at the screen wondering if their payment is being accepted, they might hit refresh or the back button doing this can affect the payment process. So inorder to give the user some visual queue that something is happening, I added in a loading-spinner screen.
+Sometimes when you make a purchase on a website, you are left waiting for awhile to see if your payment is being accepted. When the user is left staring at the screen wondering if their payment is being accepted, they might hit refresh or the back button doing this can affect the payment process. So in order to give the user some visual queue that something is happening, I added in a loading-spinner screen.
 
 ![spinner](wireframes/spinner.png)
 
 
 ## Django Countries
 
-Rather than the user having to type in a country code when filing out the checkout form, they can select their country from a dropdown list. During testing I was using IR for Ireland, which I couldn't understand why the card was being declined. I should have been using IE, IR is Iran. A common mistake that could infuriate the user. Django Countries will eliminate this error from the user.
+Rather than the user having to type in a country code when filling out the checkout form, they can select their country from a dropdown list. During testing I was using IR for Ireland, which I couldn't understand why the card was being declined. I should have been using IE, IR is Iran. A common mistake that could infuriate the user. Django Countries will eliminate this error from the user.
 
 ![django countries](wireframes/django_countries.png)
 
@@ -394,7 +394,7 @@ Rather than the user having to type in a country code when filing out the checko
 - The ability to sign up and create an account.
 - Superuser has the ability to maintain the website, by updating or deleting cars.
 - The ability to add cars to the 'bag' and see the cost dynamically update.
-- If something is in the 'bag', font will be bold and a diffrent colour to give the user visual feedback.
+- If something is in the 'bag', font will be bold and a different colour to give the user visual feedback.
 - Fixtures is used in order to load data very quickly into a django database so we don't have to do it all manually in the admin.
 - Simple back to top button.
 - Bootstrap Toast Notifications.
@@ -584,7 +584,7 @@ The deployment process listed below assumes that you have
 
 ### Set up automatic deployment
 
-1. Connect to GitHub fropm the "Deploy" tab in the app's heroku.com dashboard
+1. Connect to GitHub from the "Deploy" tab in the app's heroku.com dashboard
 
 2. Click enable automatic deploys
 
@@ -669,7 +669,7 @@ The app will now be live, but currently shows no styling or images, because `DIS
 
 3. From the new browser window,  select "s3 Bucket Policy" in Step 1
 
-4. Allow all Principals by adding an asterisk (`*`) to the Pricipal input area of Step 2
+4. Allow all Principals by adding an asterisk (`*`) to the Principal input area of Step 2
 
 5. Choose "GetObject" from the Actions dropdown menu
 
@@ -709,7 +709,7 @@ The app will now be live, but currently shows no styling or images, because `DIS
 
 1. Select "Policies" from the dashboard
 
-2. Click "Create polocy" 
+2. Click "Create policy" 
 
 3. Click the "JSON" tab, then click "Import managed policy"
 
@@ -787,13 +787,13 @@ The app will now be live, but currently shows no styling or images, because `DIS
 
 Since the styling and images are available within the app (thanks to the use of the inbuilt sqlite database), they will always be visible while in development. Thus, it is ONLY the live deployed site that needs to connect to S3
 
-1. Add relevant `if` statement: "if there is a vairable called USE_AWS in the environment, then connect to AWS"
+1. Add relevant `if` statement: "if there is a variable called USE_AWS in the environment, then connect to AWS"
 
 	```
 	if 'USE_AWS' in os.environ:
     	# Bucket config
     	AWS_STORAGE_BUCKET_NAME = 'name-of-your-app'
-    	AWS_S3_REGION_NAME = '(the region choen when setting up AWS)'
+    	AWS_S3_REGION_NAME = '(the region chosen when setting up AWS)'
     	AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     	AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 	```
@@ -918,7 +918,7 @@ if 'USE_AWS' in os.environ:
 
 ## Testing
 
-The site should now be live and runnig  perfectly. Test it by creating an order, checking the Events and Webhooks tabs in Stripe, and then by navigating to the admin of the site.
+The site should now be live and running perfectly. Test it by creating an order, checking the Events and Webhooks tabs in Stripe, and then by navigating to the admin of the site.
 
 ## Emails
 
@@ -938,7 +938,7 @@ For users to create accounts and use the site, they will need to receive emails.
 
 4. Copy the 16 digit password and add this to the heroku dashboard Config Vars
 
-	`EMAIL_HOST_PASS` = the 16 digit passwird
+	`EMAIL_HOST_PASS` = the 16 digit password
 
 5. Set the email address in Config Vars
 
@@ -951,7 +951,7 @@ For users to create accounts and use the site, they will need to receive emails.
 	```
 	if 'DEVELOPMENT' in os.environ:
     	EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    	DEFAULT_FROM_EMAIL = '<emailaddresschosen@email.com>'
+    	DEFAULT_FROM_EMAIL = 'classicfordcarss@gmail.com'
 	else:
     	EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     	EMAIL_USE_TLS = True
@@ -964,17 +964,17 @@ For users to create accounts and use the site, they will need to receive emails.
 
 2. Navigate to the live site's admin and go to "Sites"
 
-3. Set the "Domain name" and "Display name" as approrpiate
+3. Set the "Domain name" and "Display name" as appropriate
 
 4. Commit all changes
 
 	```
 	git add .
-	git commit -m ‘Email set up’
+	git commit -m ‘Created Email set up’
 	git push
 	```
 
-5. Test by creating a new account and verifiying email reception. Click the verification link in the email to verify the account and then log in
+5. Test by creating a new account and verifying email reception. Click the verification link in the email to verify the account and then log in
 
 # Cloning 
 
