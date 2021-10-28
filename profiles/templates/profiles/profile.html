@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-
+<!-- CSS for the profile page -->
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
@@ -15,18 +15,23 @@
 {% endblock %}
 
 {% block content %}
+<!-- The below form displays the user's delivery info -->
 <div class="overlay"></div>
 <div class="container mt-0">
     <hr>
+    <!-- {{ user }} displays the user's username -->
     <h2 class="logo-font text-dark mb-4">{{ user }} Profile</h2>
     <hr>
     <div class="row">
         <div class="col mb-4 p-4 card shadow">
             <div class="row">
                 <div class="col-12 col-lg-6">
+                    <!-- Default delivery info form -->
                     <p class="text-muted">Default Delivery Information</p>
                     <form action="{% url 'profile' %}" method="POST" id="profile-update-form" class="mt-3">
+                        <!-- A CSRF Token is a secret, unique and unpredictable value a server-side application generates in order to protect CSRF vulnerable resources. The tokens are generated and submitted by the server-side application in a subsequent HTTP request made by the client. Form won't work without this token. -->
                         {% csrf_token %}
+                        <!-- Generates Django crispy forms -->
                         {{ form|crispy }}
                         <button class="btn btn-black rounded-4 text-uppercase shadow">
                             Update Information
@@ -79,6 +84,7 @@
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
+// Script to take control of country selected colours
     let countrySelected = $('#id_default_country').val();
     if (!countrySelected) {
         $('#id_default_country').css('color', '#aab7c4');

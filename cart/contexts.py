@@ -6,6 +6,9 @@ from products.models import Product
 
 def cart_contents(request):
 
+    ''' Creates the cart contents context to be used
+    throughout the site '''
+
     cart_items = []
     total = 0
     product_count = 0

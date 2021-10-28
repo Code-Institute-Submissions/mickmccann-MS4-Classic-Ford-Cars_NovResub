@@ -45,12 +45,12 @@ INSTALLED_APPS = [
     "classic_ford_cars.apps.ModifiedAccountConfig",
     # 'allauth.socialaccount',
     "classic_ford_cars.apps.ModifiedSocialAccountConfig",
+    # Website apps
     'home',
     'products',
     'cart',
     'checkout',
     'profiles',
-
     # Other
     'crispy_forms',
     'storages',
@@ -126,7 +126,8 @@ if 'DATABASE_URL' in os.environ:
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'dfvstfmq4t2e0j',
             'USER': 'zetkddgmyzhupb',
-            'PASSWORD': 'be006b25758c5e0fbe05d15cd088f6d16657cea549f1840eef761284c4796878',
+            'PASSWORD':
+            'be006b25758c5e0fbe05d15cd088f6d16657cea549f1840eef761284c4796878',
             'HOST': 'ec2-52-214-178-113.eu-west-1.compute.amazonaws.com',
             'PORT': '5432',
         }

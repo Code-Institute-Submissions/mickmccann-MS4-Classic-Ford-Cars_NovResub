@@ -11,7 +11,9 @@ def view_cart(request):
 
 
 def add_to_cart(request, item_id):
-    """ Add a car to the cart """
+    """ Add a car to the cart. It also displays an
+    error message and redirects to the homepage if a user
+    tries to type the url into the browser """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = 1
@@ -29,7 +31,9 @@ def add_to_cart(request, item_id):
 
 
 def remove_from_cart(request, item_id):
-    """ Remove car from the cart """
+    """ Remove car from the cart. It also displays
+    an error message if a user tries to type
+    the url into the browser """
 
     try:
         product = get_object_or_404(Product, pk=item_id)
