@@ -54,6 +54,7 @@ Ensure when logged in as the Superuser, Edit and Delete buttons are displayed on
 Ensure defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. | Defensive programming is installed to prevent against someone from deleting or editing our products on the off chance they know the correct URLs. [Defensive programming](wireframes/defensive_prog.png) | PASS
 Ensure when the site owner is uploading a new car image, they are provided with the correct message as to what the image will be. | When the site owner is uploading a new car image, they are provided with the correct message as to what the image will be. [Image select](wireframes/select_image.png) | PASS
 Ensure when the site owner is editing a product, when clicking on the remove checkbox and then update car button, the car image is removed. | When the site owner is editing a product, when clicking on the remove checkbox and then update car button, the car image is removed. | PASS
+Ensure when a user is signing up, any mistakes they make when filling out the form, is instantly displayed to them. | When a user is signing up, any mistakes they make when filling out the form, is instantly displayed to them. [Sign up errors1](wireframes/signup_errors1.png) - [Sign up errors2](wireframes/signup_errors2.png) | PASS
 
 ---
 
@@ -106,6 +107,7 @@ Ensure when a user clicks on the car category link in the card of the products p
 Ensure when a user hovers over a badge, the colours invert. | When a user hovers over a badge, the colours invert. [badges hover](wireframes/badges_hover.png) | PASS
 Ensure Back-To-Top button takes the user back to the top of the page when clicked. | Back-To-Top button takes the user back to the top of the page when clicked. | PASS
 Ensure when on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | When on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | PASS
+Ensure a custom 404 Error page is displayed to the user if they enter a page that does not exist. | A custom 404 Error page is displayed to the user if they enter a page that does not exist. [404 Error](wireframes/404_error.png) | PASS
 
 
 ---
@@ -258,11 +260,15 @@ I wanted to have something whereby if the user bought a car over €23,000 this 
 
 # CHROME LIGHTHOUSE REPORT
 
-## Lighthouse Test Report
+## Lighthouse Test Report (Deployed)
+![Lighthouse report](wireframes/lighthouse_report_deployed.png)
+
+
+## Lighthouse Test Report (Locally)
 ![Lighthouse report](wireframes/lighthouse_test.png)
 
 
-## Incognito Lighthouse Test Report
+## Incognito Lighthouse Test Report (Locally)
 ![Lighthouse report](wireframes/incog_lighthouse_test.png)
 
 ---
@@ -440,6 +446,9 @@ The website has been thoroughly tested on the following browsers:
 When a user purchases a car, the order goes through fine, but when they go to their profile there's a dublicate order. User is only charged for one car.
 
 ![dublicate order](wireframes/dublicate_order.png)
+
+In my checkout views.py, I had this line of code twice ```order_form = OrderForm()``` removing the extra code that I had mistakenly addded twice, resolved the issue.
+
 
 
 ## Issue With The Layout Of The Cart On Mobile 

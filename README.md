@@ -1058,12 +1058,14 @@ Full details on the relevant testing can be found here: [Testing](TESTING.md)
 
 # CREDITS
 
-Credit info goes here
+Credit goes to Chris for creating the Boutique Ado project that mine is based on.
 
 ---
 
 # ACKNOWLEDGEMENTS
 
-Acknowledgement info goes here
+Thanks to my mentor Marcel, the terrific team at Code Institute, their fabulous team of tutors and student care.
+Also thanks to my fellow student, Abi Harrison.
+Thank you all for getting me this far!
 
 ---
