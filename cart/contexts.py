@@ -8,8 +8,6 @@ def cart_contents(request):
 
     ''' Creates the cart contents context to be used
     throughout the site '''
-    print(request)
-    print(dir(request))
 
     cart_items = []
     total = 0

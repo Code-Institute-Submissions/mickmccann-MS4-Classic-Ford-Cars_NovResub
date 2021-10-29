@@ -34,7 +34,6 @@ class StripeWH_Handler:
             [cust_email]
         )
 
-        print(body)
 
     def handle_event(self, event):
         """
