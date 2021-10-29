@@ -97,7 +97,7 @@
                                         {{  order_form.country | as_crispy_field }}
                                     </div>
                                 <div class="form-check form-check-inline float-right mr-0">
-                                    <!-- If the user is registered they have the option to save the dellivery info. Otherwise they are given links to login or create an account -->
+                                    <!-- If the user is registered they have the option to save the delivery info. Otherwise they are given links to login or create an account -->
                                     {% if user.is_authenticated %}
                                         <label for="id-save-info" class="form-check-label">Save this delivery info to your profile</label>
                                         <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info" checked>
@@ -151,7 +151,7 @@
         </div>
     </div>
     <div id="loading-overlay">
-        <!-- Loading spinning icon of a car is displayed while the payyment is being processed -->
+        <!-- Loading spinning icon of a car is displayed while the payment is being processed -->
         <h1 class="text-white logo-font loading-spinner">
             <span class="icon">
                 <i class="fas fa-7x fa-car fa-spin"></i>
