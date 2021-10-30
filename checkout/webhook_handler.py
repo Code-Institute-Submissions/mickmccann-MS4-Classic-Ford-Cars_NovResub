@@ -16,6 +16,8 @@ class StripeWH_Handler:
 
     def __init__(self, request):
         self.request = request
+        print("CREATING ORDER TWICE")
+
 
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
@@ -33,6 +35,7 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
+
 
 
     def handle_event(self, event):
