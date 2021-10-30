@@ -211,7 +211,6 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 SECRET_KEY = os.getenv('SECRET_KEY', '')
-print('STRIPE_WH_SECRET: ', STRIPE_WH_SECRET)
 
 # Send emails
 if 'DEVELOPMENT' in os.environ:

@@ -16,8 +16,6 @@ class StripeWH_Handler:
 
     def __init__(self, request):
         self.request = request
-        print("CREATING ORDER TWICE")
-
 
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
@@ -35,8 +33,6 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
-
-
 
     def handle_event(self, event):
         """
@@ -137,13 +133,11 @@ Verified order already in database',
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in \
-                                            item_data['items_by_size'].items():
+                        for quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                product_size=size,
                             )
                             order_line_item.save()
             except Exception as e:
