@@ -451,11 +451,10 @@ When a user purchases a car, the order goes through fine, but when they go to th
 
 In my checkout views.py, I had this line of code twice ```order_form = OrderForm()``` removing the extra code that I had mistakenly added twice, resolved the issue.
 
-Upon further investigation, this proved to be a far more complicate task to resolve. My Stripe Webhooks weren't commuincating with my site so I had to create STRIPE_WH_SECRET in my Gitpod variables. 
+Upon further investigation, this proved to be a far more complicate task to resolve. My Stripe Webhooks weren't commuincating with my site so I had to create ```STRIPE_WH_SECRET``` in my Gitpod variables. 
 
 
-
-## Issue With The Layout Of The Cart On Mobile 
+## Issue With The Layout Of The Cart On Mobile 
 
 Although the functions on the cart all worked on mobile devices, the layout wasn't exactly user friendly. 
 
