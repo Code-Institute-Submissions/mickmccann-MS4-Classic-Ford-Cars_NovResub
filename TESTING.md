@@ -254,7 +254,7 @@ Please note that these errors are mostly related to lines being too long, being 
 
 # THE FREE THRESHOLD
 
-I wanted to have something whereby if the user bought a car over €23,000 this would entitled the car buyer to a year free of mechanical services, I was unable to implement this in the way I wanted. So I've chosen to leave this feature out for now. 
+I wanted to have something whereby if the user bought a car over €23,000 this would entitled the car buyer to a year free of mechanical services, I was unable to implement this in the way I wanted with time not being on side. So I've chosen to leave this feature out for now. 
 
 ---
 
@@ -276,6 +276,8 @@ I wanted to have something whereby if the user bought a car over €23,000 this 
 # RESPONSIVENESS TESTING
 
 ## Navbar Responsiveness
+
+Please note, the website has been tested across multiple devices.
 
 Ensure Navbar displays as intended across devices and laptops.
 
@@ -441,13 +443,15 @@ The website has been thoroughly tested on the following browsers:
 
 # BUGS AND ISSUES
 
-## Dublicate Orders
+## Duplicate Orders
 
-When a user purchases a car, the order goes through fine, but when they go to their profile there's a dublicate order. User is only charged for one car.
+When a user purchases a car, the order goes through fine, but when they go to their profile there's a duplicate order. User is only charged for one car.
 
 ![dublicate order](wireframes/dublicate_order.png)
 
-In my checkout views.py, I had this line of code twice ```order_form = OrderForm()``` removing the extra code that I had mistakenly addded twice, resolved the issue.
+In my checkout views.py, I had this line of code twice ```order_form = OrderForm()``` removing the extra code that I had mistakenly added twice, resolved the issue.
+
+Upon further investigation, this proved to be a far more complicate task to resolve. My Stripe Webhooks weren't commuincating with my site so I had to create STRIPE_WH_SECRET in my Gitpod variables. 
 
 
 

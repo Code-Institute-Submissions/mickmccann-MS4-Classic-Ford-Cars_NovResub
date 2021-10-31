@@ -1056,6 +1056,15 @@ Full details on the relevant testing can be found here: [Testing](TESTING.md)
 
 ---
 
+# FEATURES LEFT TO BE INSTALLED
+
+Given more time, I would have liked to have gotten my footer pages to work as per my wireframes and screenshots.
+
+Also if this was a real website for someone, it would be great to have an instant message feature for users to chat with an expert.
+
+
+---
+
 # CREDITS
 
 Credit goes to Chris for creating the Boutique Ado project that mine is based on.
@@ -1064,7 +1073,7 @@ Credit goes to Chris for creating the Boutique Ado project that mine is based on
 
 # ACKNOWLEDGEMENTS
 
-Thanks to my mentor Marcel, the terrific team at Code Institute, their fabulous team of tutors and student care.
+Thanks to my mentor Marcel, the terrific team at Code Institute, their fabulous team of tutors (Thanks Sean!) and student care.
 Also thanks to my fellow student, Abi Harrison.
 Thank you all for getting me this far!
 
