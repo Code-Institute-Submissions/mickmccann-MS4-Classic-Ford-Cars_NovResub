@@ -133,7 +133,7 @@ Verified order already in database',
                         )
                         order_line_item.save()
                     else:
-                        for quantity in item_data['items_by_size'].items():
+                        for quantity in item_data[''].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
