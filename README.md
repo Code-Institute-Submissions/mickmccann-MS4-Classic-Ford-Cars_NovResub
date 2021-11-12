@@ -398,6 +398,7 @@ Rather than the user having to type in a country code when filling out the check
 - Fixtures is used in order to load data very quickly into a django database so we don't have to do it all manually in the admin.
 - Simple back to top button.
 - Bootstrap Toast Notifications.
+- Defensive programming to prevent the admin from accidently deleting a product.
 
 ## Featured Installed Apps
 

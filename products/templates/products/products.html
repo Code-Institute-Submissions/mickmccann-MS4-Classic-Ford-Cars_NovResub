@@ -86,12 +86,12 @@
                             <p class="mb-0 logo-font text-dark">{{ product.name }}</p>
                         </div>
                         {% if request.user.is_superuser %}
-                        <!-- Button trigger modal -->
                         <div class="mb-2 ml-3">
                             <a href="{% url 'edit_product' product.id %}" class="text-black text-uppercase">
                                 Edit
                                 <i class="far fa-edit"></i>
                             </a>
+                            <!-- Delete button triggers modal -->
                             <a href="#" role="button" class="text-danger text-uppercase delete-btn" data-toggle="modal" 
                                 data-target="#deleteModal-{{ product.id }}">
                                 Delete
@@ -111,7 +111,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <p>Are you sure you want to delete <strong class="text-danger text-uppercase">{{ product.name }}?</strong></p>
-                                            <p>This action cannot be undone.</p>
+                                            <p>Doing this, will remove the product permanently, it cannot be undone.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-outline-black shadow" data-dismiss="modal">Close</button>
