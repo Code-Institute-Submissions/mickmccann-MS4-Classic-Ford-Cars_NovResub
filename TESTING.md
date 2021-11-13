@@ -108,7 +108,7 @@ Ensure when a user hovers over a badge, the colours invert. | When a user hovers
 Ensure Back-To-Top button takes the user back to the top of the page when clicked. | Back-To-Top button takes the user back to the top of the page when clicked. | PASS
 Ensure when on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | When on the cart page, clicking on the Keep Browsing Cars button returns the user to the products page. | PASS
 Ensure a custom 404 Error page is displayed to the user if they enter a page that does not exist. | A custom 404 Error page is displayed to the user if they enter a page that does not exist. [404 Error](wireframes/404_error.png) | PASS
-
+Ensure when the admin is logged in, in order to prevent accidental deletion of a product, a popup modal is displayed to the admin with clear instructions contained. | When the admin is logged in, in order to prevent accidental deletion of a product, a popup modal is displayed to the admin with clear instructions contained. [Modal](wireframes/modal.png) | PASS
 
 ---
 
@@ -442,6 +442,15 @@ The website has been thoroughly tested on the following browsers:
 ---
 
 # BUGS AND ISSUES
+
+## Template Error
+
+When the admin was logged in and when they navigated to the product management page they got the below error and a 500 error on the live site.
+
+![Template error](wireframes/template_error.png)
+
+In my attempt to make python files PEP8 compliant, in my widgets.py, I thought I was doing the right thing by reducing the amount of characters for the ``` template_name ``` by breaking the line up. Took me why too lomg to figure this out!
+
 
 ## Duplicate Orders
 
