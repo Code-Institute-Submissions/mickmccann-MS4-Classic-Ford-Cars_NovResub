@@ -347,6 +347,8 @@ Bootstrap Toast Notifications are lightweight notifications designed to mimic th
 
 Toasts are great for the user's UX as they can casually browse an e-commerce website, adding items to their cart without having to go to the checkout page to see what's in the cart.
 
+My toasts messages were originally when displayed, they were covering up menu items, the user had to manually dismiss the message. I felt this was bad for the user experience, so to alleviate this issue, toast nodifications now automatically disappear after 5 seconds. Too less doesn't give the user enough time to read the message.
+
 ![toast nods](wireframes/toast_nods.png)
 
 
