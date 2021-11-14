@@ -167,6 +167,9 @@ TEST            | OUTCOME                          | PASS / FAIL
 --------------- | -------------------------------- | ---------------
 Ensure customer receives a real email to confirm their email address. | Customer receives a real email to confirm their email address. [Email test1](wireframes/real_email_test.png) | PASS
 Ensure customer receives a real email with their complete order information. | Customer receives a real email with their complete order information. Email contains an unique order number, order date and time, order total, delivery address and phone number. Order number is also added to the subject line [Email test2](wireframes/real_email_test.png) | PASS
+Ensure on the CONTACT US page, when a user clicks on the email link, the user's email client opens. | When on the CONTACT US page, when a user clicks on the email link, the user's email client opens. | PASS
+Ensure when a user clicks or taps on the phone number on the CONTACT US page, they are given the option to make an actual call. | When a user clicks or taps on the phone number on the CONTACT US page, they are given the option to make an actual call. | PASS
+Ensure on the CONTACT US page, the RESET FORM button clears all fields when clicked. | On the CONTACT US page, the RESET FORM button clears all fields when clicked. | PASS
 
 ---
 
