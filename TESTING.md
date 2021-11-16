@@ -174,6 +174,7 @@ Ensure a Success message is displayed to the user when they click send when on t
 Ensure an Error message is displayed to the user if the form is not filled out correctly when on the contact page. | An Error message is displayed to the user if the form is not filled out correctly when on the contact page. | PASS
 Ensure when the user is on the contact page, when they click send they are redirected to the Contact Success page. | When the user is on the contact page, when they click send they are redirected to the Contact Success page. | PASS
 Ensure the contact form is not submitted unless all required fields are filled out. | The contact form is not submitted unless all required fields are filled out. | PASS
+Ensure Contact Us messages are saved to the admin page. | Contact Us messages are saved to the admin page. [Contact msg saved](wireframes/contact_admin.png) | PASS
 
 ---
 

@@ -14,8 +14,9 @@ def contact(request):
         if form.is_valid():
             contact_form = form.save()
 
-            messages.success(request, "Great! We received your email and \
+            messages.success(request, "Great! We received your email, \
                 we'll be intouch with you shortly.")
+            return redirect(reverse('contact'))
         else:
             messages.error(request, 'Oh No! We did not receive your email. Please \
                 make sure the form is filled out correctly.')
@@ -26,4 +27,4 @@ def contact(request):
     context = {
         'form': form,
     }
-    return render(request, 'contact/contact.html', context)
+    return render(request, 'contact/contact_success.html', context)
