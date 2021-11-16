@@ -170,6 +170,10 @@ Ensure customer receives a real email with their complete order information. | C
 Ensure on the CONTACT US page, when a user clicks on the email link, the user's email client opens. | When on the CONTACT US page, when a user clicks on the email link, the user's email client opens. | PASS
 Ensure when a user clicks or taps on the phone number on the CONTACT US page, they are given the option to make an actual call. | When a user clicks or taps on the phone number on the CONTACT US page, they are given the option to make an actual call. | PASS
 Ensure on the CONTACT US page, the RESET FORM button clears all fields when clicked. | On the CONTACT US page, the RESET FORM button clears all fields when clicked. | PASS
+Ensure a Success message is displayed to the user when they click send when on the contact page. | A Success message is displayed to the user when they click send when on the contact page. [Contact success](wireframes/contact_success.png) | PASS
+Ensure an Error message is displayed to the user if the form is not filled out correctly when on the contact page. | An Error message is displayed to the user if the form is not filled out correctly when on the contact page. | PASS
+Ensure when the user is on the contact page, when they click send they are redirected to the Contact Success page. | When the user is on the contact page, when they click send they are redirected to the Contact Success page. | PASS
+Ensure the contact form is not submitted unless all required fields are filled out. | The contact form is not submitted unless all required fields are filled out. | PASS
 
 ---
 
