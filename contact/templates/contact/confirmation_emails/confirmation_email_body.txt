@@ -1,0 +1,23 @@
+Hello {{  }}!
+
+Thanks for reaching out to us.
+
+Below is a copy of the email we received:
+
+-----
+
+"{{  }}"
+
+
+A member of staff will be intouch with you as soon as possible to address your query!
+
+Sincerely,
+The Classic Ford Cars Team.
+
+Classic Ford Cars.
+40 Henry Alley,
+Co. Dublin,
+Ireland.
+
+E: classicfordcarss@gmail.com
+T: (+353) 086 1234 567
