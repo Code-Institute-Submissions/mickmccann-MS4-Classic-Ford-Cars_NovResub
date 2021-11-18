@@ -31,7 +31,7 @@ def contact(request):
                 [customer_email_message],
                 fail_silently=True,
             )
-            messages.success(request, "Great! We received your email, \
+            messages.success(request, f"Great! We received your email, {email_context.name}. \
                 we'll be intouch with you shortly.")
             return redirect(reverse('contact'))
         else:
@@ -44,4 +44,4 @@ def contact(request):
     context = {
         'form': form,
     }
-    return render(request, 'contact/contact_success.html', context)
+    return render(request, 'contact/contact.html', context)
