@@ -13,7 +13,24 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             contact_form = form.save()
+            email_context = Contact.objects.get(id=contact_form.id)
 
+            customer_email_message = email_context.email
+            subject = render_to_string(
+                'contact/confirmation_emails/confirmation_email_subject.txt',
+                {'email_context': email_context})
+            body = render_to_string(
+                'contact/confirmation_emails/confirmation_email_body.txt',
+                {'email_context': email_context,
+                    'contact_email': settings.DEFAULT_FROM_EMAIL})
+
+            send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                [customer_email_message],
+                fail_silently=True,
+            )
             messages.success(request, "Great! We received your email, \
                 we'll be intouch with you shortly.")
             return redirect(reverse('contact'))

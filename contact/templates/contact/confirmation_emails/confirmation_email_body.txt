@@ -1,4 +1,4 @@
-Hello {{  }}!
+Hello {{ email_context.name }}!
 
 Thanks for reaching out to us.
 
@@ -6,7 +6,7 @@ Below is a copy of the email we received:
 
 -----
 
-"{{  }}"
+"{{ email_context.message }}"
 
 
 A member of staff will be intouch with you as soon as possible to address your query!
