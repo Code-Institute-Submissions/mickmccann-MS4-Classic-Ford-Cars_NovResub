@@ -32,12 +32,12 @@ def contact(request):
                 fail_silently=True,
             )
             messages.success(request, f"Great! We received your email, {email_context.name}. \
-                we'll be intouch with you shortly.")
+                we'll be in touch with you shortly.")
             return redirect(reverse('contact'))
         else:
             messages.error(request, 'Oh No! We did not receive your email. Please \
                 make sure the form is filled out correctly.')
-            return redirect(reverse('contact', args=[contact_form.id]))
+            return redirect(reverse('contact'))
 
     else:
         form = ContactForm()
