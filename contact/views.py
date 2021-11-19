@@ -25,7 +25,7 @@ def contact(request):
                  'contact_email': settings.DEFAULT_FROM_EMAIL})
 
             send_mail(
-                subject,
+                subject.strip(),
                 body,
                 settings.DEFAULT_FROM_EMAIL,
                 [customer_email_message],
