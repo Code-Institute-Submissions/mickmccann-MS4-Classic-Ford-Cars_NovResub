@@ -175,6 +175,7 @@ Ensure an Error message is displayed to the user if the form is not filled out c
 Ensure when the user is on the contact page, when they click send they are redirected to the Contact Success page. | When the user is on the contact page, when they click send they are redirected to the Contact Success page. | PASS
 Ensure the contact form is not submitted unless all required fields are filled out. | The contact form is not submitted unless all required fields are filled out. | PASS
 Ensure Contact Us messages are saved to the admin page. | Contact Us messages are saved to the admin page. [Contact msg saved](wireframes/contact_admin.png) | PASS
+Ensure the user receives a confirmation email of the message they sent through the contact form. | The user receives a confirmation email of the message they sent through the contact form. [Confirmation email](wireframes/confirmation_contact.png) | PASS
 
 ---
 
@@ -450,6 +451,18 @@ The website has been thoroughly tested on the following browsers:
 ---
 
 # BUGS AND ISSUES
+
+
+## Problem With Receiving Emails
+
+On the Contact page when a user sent a message through the website, it appeared to being going through fine as they received a success message when they clicked send. The message was also being saved to the contact page on the admin site. However the user never received a confirmation of their email. To understand what was going on, in Heroku I created a variable called DEVELOPMENT and set it to True. I then restarted my app dynos and tried to submit a message. This time, I received the below error:
+
+![Contact error](wireframes/contact_error.png)
+
+For some strange reason, Django was putting in a new line in the subject field. The only fix I could think of was the ```strip()``` function that would help me debug this issue. So in my views.py I applied it to the ```send_mail subject``` which is now working as intended.
+
+https://www.w3schools.com/python/ref_string_strip.asp
+
 
 ## Template Error
 

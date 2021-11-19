@@ -2,7 +2,7 @@ Hello {{ email_context.name }}!
 
 Thanks for reaching out to us.
 
-Below is a copy of the email we received:
+Below is a copy of the email we've received:
 
 -----
 
