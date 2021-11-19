@@ -1065,6 +1065,11 @@ Given more time, I would have liked to have gotten my footer pages to work as pe
 
 Also if this was a real website for someone, it would be great to have an instant message feature for users to chat with an expert.
 
+---
+
+# MEDIA
+
+All images of cars used on the website have been sourced from [Dreamstime](https://www.dreamstime.com/).
 
 ---
 
