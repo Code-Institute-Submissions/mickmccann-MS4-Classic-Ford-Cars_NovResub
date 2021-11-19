@@ -22,17 +22,17 @@ def contact(request):
             body = render_to_string(
                 'contact/confirmation_emails/confirmation_email_body.txt',
                 {'email_context': email_context,
-                    'contact_email': settings.DEFAULT_FROM_EMAIL})
+                 'contact_email': settings.DEFAULT_FROM_EMAIL})
 
             send_mail(
                 subject,
                 body,
                 settings.DEFAULT_FROM_EMAIL,
                 [customer_email_message],
-                fail_silently=True,
+                fail_silently=False,
             )
             messages.success(request, f"Great! We received your email, {email_context.name}. \
-                we'll be in touch with you shortly.")
+                We'll be in touch with you shortly.")
             return redirect(reverse('contact'))
         else:
             messages.error(request, 'Oh No! We did not receive your email. Please \
