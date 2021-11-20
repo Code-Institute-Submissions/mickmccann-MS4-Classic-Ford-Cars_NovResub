@@ -1,18 +1,65 @@
-<!-- Footer -->
-<div class="footer-dark">
-    <div class="footer-container">
-            <div class="col text-center" style="padding: 15px;">
-                <h3 class="text-uppercase">Classic Ford Cars</h3>
-                <p>We are a small bunch of dedicated car mechanics with a passion for Ford cars. Although our cars might
-                    look old, they are 100% fully restored with each car taking up to 4,000 man hours to build.
-                <br>Feel free to <a class="text-muted" href="{% url 'contact' %}">contact us</a> regarding any queries you might have abo ut an order or our cars. Test drives are available.</p>
+<div class="container-fluid-footer p-0 mb-0 justify-content-center text-light ">
+    <footer>
+        <div class="row my-5 justify-content-center p-0">
+            <div class="col-11">
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                        <h4 class="text-uppercase mb-md-0 mb-5 text-light">Classic Ford Cars</h4>
+                        <p class="mt-4 text-secondary"> We are a small bunch of dedicated car mechanics with a passion for Ford cars. Although our cars might look old, they are 100% fully restored with each car taking up to 4,000 man hours to build.<br>
+                        Feel free to contact us regarding any queries you might have about our cars. Test drives are available.</p>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-light text-uppercase"><strong>Menu</strong></h6>
+                        <ul class="list-unstyled">
+                            <li><a href="{% url 'home' %}" class="text-secondary" id="home-link">Home</a></li>
+                            <li>
+                                <a href="{% url 'products' %}?category=capri_mark_1,capri_mark_2,capri_rally_cars"
+                                    class="text-secondary">
+                                    Capri Cars</a>
+                            </li>
+                            <li><a href="{% url 'products' %}?category=mustang_mach_1,racing_mustangs"
+                                    class="text-secondary">Mustang Cars</a></li>
+                            <li><a href="{% url 'products' %}?category=ford_gt_40" class="text-secondary">Special
+                                    Projects</a></li>
+                            <li><a class="text-secondary" href="{% url 'contact' %}" id="contact-us-link">
+                                    Contact Us
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-light text-uppercase mt-sm-0 mt-5"><strong>Address</strong></h6>
+                        <p class="mb-2 text-uppercase text-secondary">Classic Ford Cars</p>
+                        40 Henry Alley<br>
+                        Co. Dublin<br>
+                        Ireland
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social text-muted mb-0 pb-0">
+                            <a class="mx-2 text-secondary" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a class="mx-2 text-secondary" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-2 text-secondary" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a class="mx-2 text-secondary" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </p>
+                        <small>Classic Ford Cars © 2021</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2 text-uppercase text-light"><strong>Email</strong></h6>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <a class="text-secondary" href="mailto:classicfordcarss@gmail.com">
+                            classicfordcarss@gmail.com
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                        <h6 class="text-uppercase text-light"><strong>Phone</strong></h6>
+                        <span><i class="fa fa-phone-alt" aria-hidden="true"></i></span>
+                        <a class="text-secondary" href="tel:+353861234567">
+                            (+353) 086 1234 567
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col item social">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        <p class="copyright p-3">Classic Ford Cars © 2021</p>
-    </div>
+        </div>
+    </footer>
 </div>
