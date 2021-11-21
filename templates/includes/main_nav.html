@@ -9,7 +9,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu shadow border-3" aria-labelledby="all-cars-link">
+            <div class="dropdown-menu shadow border-3">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=price&rating=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Cars</a>
@@ -20,7 +20,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Capri
             </a>
-            <div class="dropdown-menu shadow border-3" aria-labelledby="capri-link">
+            <div class="dropdown-menu shadow border-3">
                 <a href="{% url 'products' %}?category=capri_mark_1" class="dropdown-item">Capri Mark 1</a>
                 <a href="{% url 'products' %}?category=capri_mark_2" class="dropdown-item">Capri Mark 2</a>
                 <a href="{% url 'products' %}?category=capri_rally_cars" class="dropdown-item">Capri Rally Cars</a>
@@ -32,7 +32,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mustang
             </a>
-            <div class="dropdown-menu shadow border-3" aria-labelledby="mustang-link">
+            <div class="dropdown-menu shadow border-3">
                 <a href="{% url 'products' %}?category=mustang_mach_1" class="dropdown-item">Mustang Mach 1</a>
                 <a href="{% url 'products' %}?category=racing_mustangs" class="dropdown-item">Racing Mustangs</a>
                 <a href="{% url 'products' %}?category=mustang_mach_1,racing_mustangs" class="dropdown-item">All Mustang Cars</a>
@@ -43,7 +43,7 @@
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="special-projects-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Projects
             </a>
-            <div class="dropdown-menu shadow border-3" aria-labelledby="specials-link">
+            <div class="dropdown-menu shadow border-3">
                 <a href="{% url 'products' %}?category=ford_gt_40" class="dropdown-item">Ford GT40</a>
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
