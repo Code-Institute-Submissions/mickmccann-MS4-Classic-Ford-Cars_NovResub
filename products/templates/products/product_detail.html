@@ -58,6 +58,14 @@
                                 Delete
                                 <i class="far fa-trash-alt"></i>
                             </a>
+                            <div class="mt-4 form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea"></label>
+                                <button class="shadow border-2 btn btn-outline-black rounded-8 text-uppercase mt-2" type="submit">Delete</button>
+                                <button class="shadow border-2 btn btn-black rounded-8 text-uppercase mt-2" type="submit">Submit</button>
+                              </div>
+
+                            <!-- Modal -->
                             <div class="modal fade text-black text-transform-none" id="deleteModal-{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel-{{ product.name }}" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -81,6 +89,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         {% endif %}
                 <hr>
                 <!-- Form to add car to the cart -->
