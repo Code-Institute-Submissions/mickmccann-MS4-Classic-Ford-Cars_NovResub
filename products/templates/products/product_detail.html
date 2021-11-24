@@ -58,12 +58,23 @@
                                 Delete
                                 <i class="far fa-trash-alt"></i>
                             </a>
-                            <div class="mt-4 form-floating">
+                            
+                            {% if not product.comments.all %}
+                                <p>No Commments Added Yet</p>
+                            {% else %}
+                                {% for comment in product.comments.all %}
+                                    <h3>{{ comment.comment_name }}</h3>
+                                    <p>{{ comment.comment_body }}</p>
+                                    <p><small>{{ comment.date_added }}</small></p>
+                                {% endfor %}
+                                    <a class="shadow border-2 btn btn-black rounded-8 text-uppercase mt-2" href="">Comment</a>
+                            {% endif %}
+                            <!--<div class="mt-4 form-floating">
                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                                 <label for="floatingTextarea"></label>
                                 <button class="shadow border-2 btn btn-outline-black rounded-8 text-uppercase mt-2" type="submit">Delete</button>
                                 <button class="shadow border-2 btn btn-black rounded-8 text-uppercase mt-2" type="submit">Submit</button>
-                              </div>
+                              </div>-->
 
                             <!-- Modal -->
                             <div class="modal fade text-black text-transform-none" id="deleteModal-{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel-{{ product.name }}" aria-hidden="true">
