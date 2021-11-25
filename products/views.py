@@ -64,8 +64,11 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    num_comments = Comment.objects.filter(product=product).count()
+
     context = {
         'product': product,
+        'num_comments': num_comments
     }
 
     return render(request, 'products/product_detail.html', context)

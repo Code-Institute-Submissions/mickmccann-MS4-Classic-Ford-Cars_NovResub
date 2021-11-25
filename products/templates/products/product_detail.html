@@ -58,7 +58,7 @@
                                 Delete
                                 <i class="far fa-trash-alt"></i>
                             </a>
-                            
+                            <br>Comments: ({{num_comments}})
                             {% if not product.comments.all %}
                                 <p>No Commments Added Yet</p>
                             {% else %}
@@ -67,7 +67,8 @@
                                     <p>{{ comment.comment_body }}</p>
                                     <p><small>{{ comment.date_added }}</small></p>
                                 {% endfor %}
-                                    <a class="shadow border-2 btn btn-black rounded-8 text-uppercase mt-2" href="{% url 'add_comment' product.id %}">Comment</a>
+                                    <a class="shadow border-2 btn btn-black rounded-8 text-uppercase mt-2" 
+                                    href="{% url 'add_comment' product.id %}">Comment</a>
                             {% endif %}
                             <!--<div class="mt-4 form-floating">
                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
