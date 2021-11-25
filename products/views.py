@@ -169,3 +169,11 @@ def add_comment(request, product_id):
     }
 
     return render(request, 'products/add_comment.html', context)
+
+
+def delete_comment(request, comment_id):
+    """ Delete the comment """
+    comment = get_object_or_404(Comment, pk=comment_id)
+    comment.delete()
+    messages.success(request, 'Comment successfully deleted.')
+    return redirect(reverse('products'))
