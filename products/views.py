@@ -177,3 +177,26 @@ def delete_comment(request, comment_id):
     comment.delete()
     messages.success(request, 'Comment successfully deleted.')
     return redirect(reverse('products'))
+
+
+def edit_comment(request, comment_id):
+    """ Edit the comment """
+    comment = get_object_or_404(Comment, pk=comment_id)
+    if request.method == 'POST':
+        form = CommentForm(request.POST, request.FILES, instance=comment)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('add_comment', args=[comment_id]))
+        else:
+            messages.error(request, 'Failed to edit the comment, please \
+                ensure the form is filled out correctly.')
+    else:
+        form = CommentForm(instance=comment)
+
+    template = 'products/add_comment.html'
+    context = {
+        'form': form,
+        'comment': comment,
+    }
+
+    return render(request, template, context)

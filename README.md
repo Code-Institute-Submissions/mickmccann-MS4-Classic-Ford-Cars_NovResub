@@ -22,6 +22,12 @@ All design decisions have been made with the following goals in mind:
 
 ---
 
+# NOTICE
+
+I struggled with getting my CRUD functionality to work for users who wish to leave a comment on a particular car, I've left the code and logic in so that you can see my work and hopefully I can be assessed on that. What I was trying to do, if a user was on the product detail page, they could leave a comment, edit it or delete it. But for some reason, the buttons weren't displaying when I ran the server locally. I really struggled with trying to get this feature to work as I intended. CRUD functionality works for the Admin on the product management page though.
+
+---
+
 # USER EXPERIENCE
 
 ## User Stories
